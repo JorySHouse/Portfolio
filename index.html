@@ -29,5 +29,39 @@
             </div>
         </div>
     </section>
+
+    <!-- Tabs Section -->
+    <section id="tabs-section">
+        <div class="tabs">
+            <button class="tab-button" onclick="showCarousel(1)">Tab 1</button>
+            <button class="tab-button" onclick="showCarousel(2)">Tab 2</button>
+            <!-- Add more tabs as needed -->
+        </div>
+
+        <!-- Carousel Section -->
+        <div id="carousel-container">
+            <!-- Carousel 1 -->
+            <div class="carousel" id="carousel1">
+                <button class="carousel-button" onclick="prevSlide('carousel1')">❮</button>
+                <div class="carousel-slides">
+                    <img src="placeholder1.jpg" alt="Slide 1">
+                    <img src="placeholder2.jpg" alt="Slide 2" style="display: none;">
+                    <!-- Add more slides -->
+                </div>
+                <button class="carousel-button" onclick="nextSlide('carousel1')">❯</button>
+            </div>
+
+            <!-- Carousel 2 -->
+            <div class="carousel" id="carousel2" style="display: none;">
+                <button class="carousel-button" onclick="prevSlide('carousel2')">❮</button>
+                <div class="carousel-slides">
+                    <img src="placeholder3.jpg" alt="Slide 1">
+                    <img src="placeholder4.jpg" alt="Slide 2" style="display: none;">
+                    <!-- Add more slides -->
+                </div>
+                <button class="carousel-button" onclick="nextSlide('carousel2')">❯</button>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

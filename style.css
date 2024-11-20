@@ -32,3 +32,96 @@ header h1 {
 
 #about h2 {
     font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Tabs Section */
+#tabs-section {
+    padding: 20px;
+    background-color: #f5f5dc; /* Same as main background */
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows tabs to stack on smaller screens */
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #8eaebd; /* Accent color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tab-button:hover {
+    background-color: #5f8395; /* Slightly darker on hover */
+}
+
+.tab-button:focus {
+    outline: 2px solid #333; /* Highlight selected tab */
+}
+
+/* Carousel Section */
+#carousel-container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    display: none; /* Only show the active carousel */
+}
+
+.carousel-slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-slides img {
+    max-width: 100%;
+    max-height: 400px;
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-button:nth-child(1) {
+    left: 10px; /* Left arrow */
+}
+
+.carousel-button:nth-child(3) {
+    right: 10px; /* Right arrow */
+}
