@@ -33,25 +33,55 @@
     <!-- Tabs Section -->
     <section id="tabs-section">
         <div class="tabs">
-            <button class="tab-button" onclick="showTabContent(1)">Horror Video</button>
-            <button class="tab-button" onclick="showTabContent(2)">Tab 2</button>
+            <button class="tab-button" onclick="showTabContent(1)">Game 1: Solace</button>
+            <button class="tab-button" onclick="showTabContent(2)">Game 2: Placeholder</button>
         </div>
 
         <!-- Dynamic Content Section -->
         <div id="tab-content">
+            <!-- Game 1: Solace Content -->
             <div class="content" id="tab1-content">
-                <h3>Horror Video</h3>
-                <p>Here's a video of trailers that showcase my work in the horror genre.</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/tpgfpPOtT3Q" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
+                <h3>Solace</h3>
+
+                <!-- Trailer Video -->
+                <div class="video-section">
+                    <h4>Trailer Video</h4>
+                    <iframe width="560" height="315" src="" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                </div>
+
+                <!-- Project Goals -->
+                <div class="text-video-pair">
+                    <p><strong>Project Goals:</strong> I wanted to create an RPG that gave the player a wide range of abilities...</p>
+                </div>
+
+                <!-- Accomplishments -->
+                <div class="text-video-pair">
+                    <h4>Accomplishments</h4>
+                    <p>Primary Developer of Ability and Combat Systems: Led the design and implementation...</p>
+                </div>
             </div>
 
+            <!-- Game 2: Placeholder Content -->
             <div class="content" id="tab2-content" style="display: none;">
-                <h3>Placeholder Title</h3>
-                <p>This is some placeholder text for Tab 2. Replace this with your actual content.</p>
-                <img src="placeholder.jpg" alt="Placeholder Image" style="max-width: 100%;">
+                <h3>Game 2: Placeholder</h3>
+
+                <!-- Placeholder Video -->
+                <div class="video-section">
+                    <h4>Trailer Video</h4>
+                    <iframe width="560" height="315" src="" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                </div>
+
+                <!-- Placeholder Text -->
+                <div class="text-video-pair">
+                    <h4>Project Goals</h4>
+                    <p>This is placeholder text for the second game's project goals...</p>
+                </div>
             </div>
         </div>
     </section>

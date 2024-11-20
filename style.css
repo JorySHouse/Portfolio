@@ -64,18 +64,37 @@ header h1 {
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
+    text-align: center;
 }
 
+/* Content Sections */
 .content {
     display: none; /* Hidden by default */
 }
 
 .content h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.video-section h4 {
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.content p {
+.video-section iframe {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.text-video-pair {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.text-video-pair p {
     font-size: 1.2rem;
     line-height: 1.6;
+    margin-bottom: 20px;
 }
