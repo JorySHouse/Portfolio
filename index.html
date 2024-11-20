@@ -19,8 +19,6 @@
                 Hello! My name is Jory House, and I am a passionate game designer, programmer, and artist.
                 I specialize in creating immersive and interactive experiences for players. Stay tuned for more!
             </p>
-
-            <!-- Virtual Portfolio Section -->
             <div id="virtual-portfolio">
                 <h3>Check Out My Virtual Portfolio</h3>
                 <p>
@@ -33,55 +31,114 @@
     <!-- Tabs Section -->
     <section id="tabs-section">
         <div class="tabs">
-            <button class="tab-button" onclick="showTabContent(1)">Game 1: Solace</button>
-            <button class="tab-button" onclick="showTabContent(2)">Game 2: Placeholder</button>
+            <button class="tab-button" onclick="showTabContent(1)">Solace Project</button>
+            <button class="tab-button" onclick="showTabContent(2)">Tab 2</button>
         </div>
 
         <!-- Dynamic Content Section -->
         <div id="tab-content">
-            <!-- Game 1: Solace Content -->
+            <!-- Tab 1 Content -->
             <div class="content" id="tab1-content">
-                <h3>Solace</h3>
+                <h3>Solace: Project Overview</h3>
 
                 <!-- Trailer Video -->
                 <div class="video-section">
                     <h4>Trailer Video</h4>
-                    <iframe width="560" height="315" src="" 
-                        title="YouTube video player" frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/placeholder" 
+                        title="Trailer Video" frameborder="0" allowfullscreen></iframe>
                 </div>
 
                 <!-- Project Goals -->
-                <div class="text-video-pair">
-                    <p><strong>Project Goals:</strong> I wanted to create an RPG that gave the player a wide range of abilities...</p>
+                <div class="text-video-section">
+                    <h4>Project Goals</h4>
+                    <p>
+                        I wanted to create an RPG that gave the player a wide range of abilities without forcing them to choose between a few and still be executable within a few button presses.
+                        Inspired by Final Fantasy 14, I used trigger buttons as gates for ability usage, enabling more abilities with minimal button clutter.
+                    </p>
+                    <p>
+                        Another goal was to design enemies that worked together, using timed attacks and formations. Ground telegraphs created engaging scenarios, requiring the player to solve puzzles in combat and align with level design.
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/placeholder" 
+                        title="Project Goals Video" frameborder="0" allowfullscreen></iframe>
                 </div>
 
                 <!-- Accomplishments -->
-                <div class="text-video-pair">
+                <div class="text-video-section">
                     <h4>Accomplishments</h4>
-                    <p>Primary Developer of Ability and Combat Systems: Led the design and implementation...</p>
+                    <p>
+                        - Primary Developer of Ability and Combat Systems<br>
+                        - Innovative Targeting System Development<br>
+                        - Hot Bar System Optimization<br>
+                        - Elemental Stances Mechanic Implementation<br>
+                        - Teleportation System Overhaul<br>
+                        - Enemy Ability and Formation System Design
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/placeholder" 
+                        title="Accomplishments Video" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <!-- Elemental Stances -->
+                <div class="text-video-section">
+                    <h4>Elemental Stances</h4>
+                    <p>
+                        Players can switch between Fire, Water, Lightning, and Wind stances to enhance strategy and combat choices:
+                        <ul>
+                            <li><strong>Fire:</strong> High single target damage</li>
+                            <li><strong>Water:</strong> Crowd control</li>
+                            <li><strong>Wind:</strong> Area of effect attacks</li>
+                            <li><strong>Lightning:</strong> Ranged abilities for distant foes</li>
+                        </ul>
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/placeholder" 
+                        title="Elemental Stances Video" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <!-- Critical Hits -->
+                <div class="text-video-section">
+                    <h4>Critical Hits</h4>
+                    <p>
+                        Critical hits in Solace aren't random. Instead, they're triggered by ability synergies. For instance, applying the Burn status and following up with a Water attack creates an explosion for a critical hit. Critical hits throw enemies off balance, with bold text feedback for players.
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/placeholder" 
+                        title="Critical Hits Video" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <!-- Hot Bar -->
+                <div class="text-video-section">
+                    <h4>Hot Bar</h4>
+                    <p>
+                        The Hot Bar allows quick access to abilities segmented by gamepad triggers for intuitive gameplay. Originally designed with 16 buttons, playtesting led to streamlining it to 8 buttons to reduce clutter while maintaining functionality.
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/placeholder" 
+                        title="Hot Bar Video" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <!-- Teleportation System -->
+                <div class="text-video-section">
+                    <h4>Teleportation System</h4>
+                    <p>
+                        Redesigned for a player-centric approach, the teleportation system provides dynamic mobility. Players can instantly move to specific locations, enhancing exploration and dodging mechanics. It also includes a unique parry mechanic called Teleport Strike.
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/placeholder" 
+                        title="Teleportation System Video" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <!-- Enemy Formation System -->
+                <div class="text-video-section">
+                    <h4>Enemy Formation System</h4>
+                    <p>
+                        Enemies in Solace work together with synchronized attacks, requiring players to think strategically. Attack telegraphs and coordinated formations create engaging combat puzzles that challenge player response and positioning.
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/placeholder" 
+                        title="Enemy Formation Video" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
-            <!-- Game 2: Placeholder Content -->
+            <!-- Tab 2 Content -->
             <div class="content" id="tab2-content" style="display: none;">
-                <h3>Game 2: Placeholder</h3>
-
-                <!-- Placeholder Video -->
-                <div class="video-section">
-                    <h4>Trailer Video</h4>
-                    <iframe width="560" height="315" src="" 
-                        title="YouTube video player" frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
-                </div>
-
-                <!-- Placeholder Text -->
-                <div class="text-video-pair">
-                    <h4>Project Goals</h4>
-                    <p>This is placeholder text for the second game's project goals...</p>
-                </div>
+                <h3>Placeholder Title</h3>
+                <p>This is some placeholder text for Tab 2. Replace this with your actual content.</p>
+                <img src="placeholder.jpg" alt="Placeholder Image" style="max-width: 100%;">
             </div>
         </div>
     </section>
