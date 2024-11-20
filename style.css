@@ -99,3 +99,9 @@ video {
 .wind {
     color: #5cb85c; /* Green */
 }
+
+/* Highlighted Text */
+.highlight {
+    color: #8eaebd; /* Soft blue accent */
+    font-weight: bold;
+}
