@@ -8,6 +8,12 @@ body {
     font-weight: bold; /* All text bold */
 }
 
+.centered-title {
+    text-align: center;
+    margin-bottom: 20px; /* Optional: Add space below the title */
+}
+
+
 header {
     background-color: #3e3e3e; /* Charcoal */
     color: white;
