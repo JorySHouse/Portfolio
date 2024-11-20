@@ -32,7 +32,8 @@
     <section id="tabs-section">
         <div class="tabs">
             <button class="tab-button" onclick="showTabContent(1)">Solace Project</button>
-            <button class="tab-button" onclick="showTabContent(2)">Tab 2</button>
+            <button class="tab-button" onclick="showTabContent(2)">Palette Path</button>
+	    <button class="tab-button" onclick="showTabContent(3)">Grappling Game: Combat Design</button>
         </div>
 
         <!-- Dynamic Content Section -->
@@ -236,13 +237,187 @@ When designing "Solace," I faced constraints due to my limited skills in animati
 
 
 
-            <!-- Tab 2 Content -->
-            <div class="content" id="tab2-content" style="display: none;">
-                <h3>Placeholder Title</h3>
-                <p>This is some placeholder text for Tab 2. Replace this with your actual content.</p>
-                <img src="placeholder.jpg" alt="Placeholder Image" style="max-width: 100%;">
-            </div>
-        </div>
+<!-- Tab 2 Content -->
+<div class="content" id="tab2-content">
+    <h3>Pallete Path</h3>
+    <!-- Project Goals -->
+    <div class="text-video-section">
+        <h4>Project Goals</h4>
+        <p>
+            Develop and release a mobile game, covering all stages from pre-production to launch, while advancing skills in blueprint coding. 
+            The game was designed to be educational and appropriate for younger players, with mechanics that combine colors and solve puzzles 
+            to enhance cognitive and learning skills.
+        </p>
+    </div>
+
+    <!-- Accomplishments -->
+    <div class="text-video-section">
+        <h4>Accomplishments</h4>
+        <p>
+            <span class="highlight">Engine Optimization for Level Design:</span> Enhanced game engine to speed up level creation by 80%, optimizing development workflow.
+        </p>
+        <p>
+            <span class="highlight">Save Data System Implementation:</span> Developed a save system, ensuring player progress is retained.
+        </p>
+        <p>
+            <span class="highlight">Level Streaming and Memory Management:</span> Implemented level streaming techniques and memory management practices, 
+            ensuring optimal game performance and efficiency.
+        </p>
+        <p>
+            <span class="highlight">Game Mechanics Development:</span> Designed, iterated, and implemented 'Bomb' and 'Fan' mechanics.
+        </p>
+        <p>
+            <span class="highlight">Puzzle Design:</span> Crafted complex puzzles, improving player engagement and challenge.
+        </p>
+    </div>
+
+    <!-- Game Concept -->
+    <div class="text-video-section">
+        <h4>Game Concept</h4>
+        <p>
+            My vision for the game was to create a simple puzzle game that is easy to pick up, set aside, and be a source of mental stimulation. 
+            While younger audiences may be challenged by the color combining, any age can enjoy the puzzle aspect. I committed to a player-friendly 
+            approach, avoiding microtransactions and integrating advertisements fairly. Players can either watch ads to regain lives or wait for them to regenerate.
+        </p>
+        <p>
+            Educationally, the game introduces younger players to color theory, particularly in creating secondary colors, while stimulating 
+            cognitive skills through thoughtfully designed puzzles. This blend of simplicity, educational value, and ethical design forms the game's core.
+        </p>
+    </div>
+
+    <!-- Engine Optimization -->
+    <div class="text-video-section">
+        <h4>Optimized Engine for Level & Puzzle Creation</h4>
+        <p>
+            I optimized the game engine by developing a map generator actor, enabling the creation of dynamic X by X grids. 
+            This tool streamlined level design, allowing for rapid customization of tile types, colors, and layouts. It also facilitated the creation 
+            of gaps and the designation of starting tiles, significantly enhancing the efficiency and flexibility of level development.
+        </p>
+        <p>
+            <strong>Key Features:</strong><br>
+            - <strong>Starting Tile:</strong> Marks the puzzle's starting point for the player.<br>
+            - <strong>Blob Tile:</strong> Restores health, resizes the player's blob, and can change its color.<br>
+            - <strong>Bomb Tile:</strong> Gives the player a bomb that can be detonated at will.<br>
+            - <strong>Fan Tile:</strong> Spreads the player's blob color to all tiles in a straight line.
+        </p>
+        <video autoplay loop muted controls width="560" height="315">
+            <source src="engine-optimization-placeholder.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Mechanics -->
+    <div class="text-video-section">
+        <h4>Mechanics</h4>
+        <p>
+            The game features multiple tile mechanics, enriching the gameplay with strategic elements that encourage players to think creatively to solve puzzles.
+        </p>
+        <p>
+            <strong>Bomb Mechanic:</strong> Players acquire a bomb by moving onto its tile, which can be detonated at their discretion. 
+            The explosion spreads the player's blob and color to adjacent tiles, programmed using a trace function to identify and alter neighboring tiles' colors. 
+            Smaller blobs interpolate to the center of each affected tile for a visually impactful effect.
+        </p>
+        <p>
+            <strong>Fan Mechanic:</strong> This tile blows the player's color across a straight line of tiles, excluding any between the player and the fan. 
+            Traces identify tiles in the direct line of effect, requiring players to plan their moves carefully for tactical advantage.
+        </p>
+        <video autoplay loop muted controls width="560" height="315">
+            <source src="mechanics-placeholder.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<!-- Tab 3 Content -->
+<div class="content" id="tab3-content">
+    <h3>Grappling Game: Combat Design</h3>
+
+    <!-- Project Goals -->
+    <div class="text-video-section">
+        <h4>Project Goals</h4>
+        <p>
+            The primary objective of this game is to center its design around the grappling mechanic. Drawing inspiration from iconic games like 
+            <em>Mario</em>, known for its focus on jumping, and <em>Sonic</em>, with its emphasis on speed, the game delivers a high-quality, immersive experience around a single core action: grappling.
+        </p>
+        <p>
+            Recently, grappling has been integrated as a side mechanic in many games. I wanted to explore what a game would look like with grappling 
+            as the main focus, particularly in combat. This concept guided my design approach.
+        </p>
+    </div>
+
+    <!-- Identifying Player Actions -->
+    <div class="text-video-section">
+        <h4>Identifying Player Actions</h4>
+        <p>
+            To design enemies effectively, I began by identifying the possible actions players could perform with the grappling mechanic. These 
+            actions form the "verbs" of the gameplay and drive enemy interactions:
+        </p>
+        <p>
+            - <strong>Pull:</strong> Attach the grapple to an object and pull it toward the player.<br>
+            - <strong>Swing:</strong> Create a rope swing to traverse areas (dependent on the grappled object).<br>
+            - <strong>Climb:</strong> Ascend when suspended over a drop.<br>
+            - <strong>Spin:</strong> Rotate an attached object around the player in a circular path (object size-dependent).
+        </p>
+        <p>
+            These core actions informed enemy design, with "Pull" becoming a central element of the main combat loop. For example, enemies are 
+            powered by batteries, and the player must pull these batteries out to defeat them.
+        </p>
+    </div>
+
+    <!-- Enemy Design Pillars -->
+    <div class="text-video-section">
+        <h4>Enemy Design Pillars</h4>
+        <p>
+            To ensure dynamic and engaging encounters, I established three key pillars for enemy design:
+        </p>
+        <p>
+            <strong>1. Size:</strong> Size influences the actions players can take on enemies. Larger enemies drag the player when grappled, while 
+            smaller enemies can be manipulated freely. Visual and gameplay feedback communicate these size differences clearly, with height, 
+            width, and scale exaggerated for clarity.
+        </p>
+        <p>
+            <strong>2. Battery Location:</strong> Enemies have batteries that power them. Identifying and targeting these batteries is a core part 
+            of combat. Batteries are visibly marked, giving players strategic visual cues.
+        </p>
+        <p>
+            <strong>3. Reaction:</strong> Enemies react uniquely when grappled. Some try to shake players off, others become aggressive, and some 
+            might pull the player toward them. Understanding these reactions is essential for mastery and rewards skilled players.
+        </p>
+    </div>
+
+    <!-- Enemy Interaction Concepts -->
+    <div class="text-video-section">
+        <h4>Enemy Interaction Concepts</h4>
+        <p>
+            Establishing these pillars led to brainstorming various enemy interactions, creating unique challenges for players. Examples include:
+        </p>
+        <p>
+            - An enemy with a constantly shifting battery location.<br>
+            - An enemy that hides its battery, revealing it only during attacks.<br>
+            - An enemy that spins uncontrollably when grappled, damaging the player unless they detach.<br>
+            - An enemy that cuts the player's grapple wire, forcing players to prioritize them.<br>
+            - An enemy that counters the player's pull action by grabbing the wire and pulling the player toward it.<br>
+            - An enemy that detaches smaller enemies for the player to spin as a weapon.<br>
+            - An enemy that manipulates the environment, creating hazardous areas and forcing players to stay airborne.<br>
+            - An enemy that retrieves detached batteries, requiring players to act quickly.
+        </p>
+    </div>
+
+    <!-- Prototyping Enemies -->
+    <div class="text-video-section">
+        <h4>Prototyping Enemies</h4>
+        <p>
+            With the design concepts in place, I began prototyping the first enemy. This prototype features a constantly moving battery that 
+            spins in a slow, continuous motion. Players must stay focused on the battery's location during combat, adding intensity and challenge.
+        </p>
+        <video autoplay loop muted controls width="560" height="315">
+            <source src="prototyping-placeholder.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+
     </section>
 
     <script>
