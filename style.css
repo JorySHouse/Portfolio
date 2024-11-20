@@ -46,25 +46,27 @@ header h1 {
 #tabs-section {
     padding: 20px;
     background-color: #f5f5dc; /* Same as main background */
-    text-align: center;
 }
 
 .tabs {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
-    flex-wrap: wrap; /* Allows tabs to stack on smaller screens */
-    margin-bottom: 20px;
+    flex-wrap: nowrap; /* Prevents tabs from wrapping */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .tab-button {
+    flex: 1; /* Makes all tabs equal width */
     background-color: #8eaebd; /* Accent color */
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 0;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 0; /* Remove rounding for a full-width look */
     cursor: pointer;
+    text-align: center;
 }
 
 .tab-button:hover {
@@ -80,11 +82,13 @@ header h1 {
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
+    overflow: hidden;
 }
 
 .carousel {
     position: relative;
     display: none; /* Only show the active carousel */
+    width: 100%; /* Full-width */
 }
 
 .carousel-slides {
@@ -92,11 +96,12 @@ header h1 {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    width: 100%;
 }
 
 .carousel-slides img {
-    max-width: 100%;
-    max-height: 400px;
+    width: 100%; /* Images span the full width */
+    height: auto;
     display: block;
 }
 
