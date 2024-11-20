@@ -35,98 +35,64 @@ header h1 {
     margin-bottom: 15px;
 }
 
-#about p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
 /* Tabs Section */
-#tabs-section {
-    padding: 20px;
-    background-color: #f5f5dc; /* Same as main background */
-}
-
 .tabs {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     gap: 10px;
-    flex-wrap: nowrap; /* Prevents tabs from wrapping */
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .tab-button {
-    flex: 1; /* Makes all tabs equal width */
+    flex: 1;
+    padding: 15px;
     background-color: #8eaebd; /* Accent color */
-    color: white;
     border: none;
-    padding: 15px 0;
-    font-size: 1rem;
-    border-radius: 0; /* Remove rounding for a full-width look */
+    color: white;
     cursor: pointer;
     text-align: center;
 }
 
 .tab-button:hover {
-    background-color: #5f8395; /* Slightly darker on hover */
-}
-
-.tab-button:focus {
-    outline: 2px solid #333; /* Highlight selected tab */
+    background-color: #5f8395;
 }
 
 /* Carousel Section */
-#carousel-container {
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    overflow: hidden;
-}
-
 .carousel {
     position: relative;
-    display: none; /* Only show the active carousel */
-    width: 100%; /* Full-width */
+    display: none; /* Hidden by default */
+    width: 100%;
 }
 
 .carousel-slides {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    overflow: hidden;
     width: 100%;
+    gap: 20px;
+    padding: 20px;
 }
 
-.carousel-slides img {
-    width: 100%; /* Images span the full width */
-    height: auto;
-    display: block;
+.slide {
+    display: flex;
+    flex: 1;
+    gap: 20px;
 }
 
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 10;
-    border-radius: 50%;
+.slide-text {
+    flex: 1;
+    text-align: left;
 }
 
-.carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+.slide-media {
+    flex: 1;
+    text-align: center;
 }
 
-.carousel-button:nth-child(1) {
-    left: 10px; /* Left arrow */
-}
-
-.carousel-button:nth-child(3) {
-    right: 10px; /* Right arrow */
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: 0;
 }
