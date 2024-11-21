@@ -75,13 +75,14 @@ p {
 }
 
 iframe {
-  display: block; /* Ensures proper margin behavior */
-  width: 100%; /* Responsive width to fit the container */
-  max-width: 560px; /* Limit to standard YouTube width */
-  height: calc(560px * 9 / 16); /* Maintain 16:9 aspect ratio */
+  display: block; /* Ensures centering works properly */
+  width: 100%; /* Make it responsive to the parent container */
+  max-width: 560px; /* Limit the width to standard YouTube size */
+  height: 315px; /* Standard YouTube height */
   margin: 20px auto; /* Center horizontally and add spacing */
   border: none; /* Clean appearance */
 }
+
 
 
 
