@@ -89,6 +89,7 @@ header h1 {
 .content h3, .content h4 {
     margin-bottom: 20px;
     font-size: 1.8rem;
+    text-align: center;
 }
 
 /* Text and Video Section Formatting */
@@ -104,6 +105,8 @@ video {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+    margin: auto;
+    display: flex;
 }
 
 /* Color Coding for Elemental Stances */
