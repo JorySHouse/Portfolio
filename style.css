@@ -43,6 +43,18 @@ header h1 {
     margin: 20px 0;
 }
 
+.text-video-section {
+    text-align: start;
+    margin: auto;
+    width: 50%;
+}
+
+.text-video-section {
+    text-align: start;
+    margin: auto;
+    width: 50%;
+}
+
 /* Center Titles */
 .centered-title {
     text-align: center;
