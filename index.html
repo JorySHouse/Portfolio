@@ -556,6 +556,12 @@
                     </p>
                 </div>
 
+    <div id="slideshow">
+        <img class="slide active" src="https://via.placeholder.com/600x400?text=Slide+1" alt="Slide 1">
+        <img class="slide" src="https://via.placeholder.com/600x400?text=Slide+2" alt="Slide 2">
+        <img class="slide" src="https://via.placeholder.com/600x400?text=Slide+3" alt="Slide 3">
+    </div>
+
                 <!-- Enemy Design Pillars -->
                 <div class="text-video-section">
                     <h4>Enemy Design Pillars</h4>
@@ -662,6 +668,27 @@
             const activeTab = localStorage.getItem('activeTab') || 1; // Get saved tab index or default to 1
             showTabContent(activeTab);
         });
+    </script>
+
+ <script>
+        // JavaScript for Slideshow
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showNextSlide() {
+            // Hide the current slide
+            slides[currentSlide].classList.remove('active');
+
+            // Move to the next slide
+            currentSlide = (currentSlide + 1) % totalSlides;
+
+            // Show the new current slide
+            slides[currentSlide].classList.add('active');
+        }
+
+        // Set the slideshow to cycle every 3 seconds
+        setInterval(showNextSlide, 3000);
     </script>
 
 </body>
