@@ -51,6 +51,13 @@ header h1 {
     font-weight: bold;
 }
 
+/* Center and Limit Width for Text Content Only */
+.text-container {
+    max-width: 800px; /* Limit text width */
+    margin: 0 auto; /* Center text horizontally */
+    padding: 0 20px; /* Add padding to the sides for breathing room */
+}
+
 .tab-button {
     flex: 1;
     padding: 15px;
