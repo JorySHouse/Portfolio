@@ -638,21 +638,33 @@
 
                 </section>
 
-                <script>
-                    // Function to show content based on the tab clicked
-                    function showTabContent(tabIndex) {
-                        const contents = document.querySelectorAll('.content');
-                        console.log(contents)
-                        contents.forEach(content => content.style.display = 'none'); // Hide all content
-                        document.getElementById(`tab${tabIndex}-content`).style.display = 'block'; // Show selected content
-                        document.getElementById(`tab-content`).style['box-shadow'] = '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';
-                    }
+    <script>
+        // Function to show content based on the tab clicked
+        function showTabContent(tabIndex) {
+            const contents = document.querySelectorAll('.content');
+            console.log(contents);
+            
+            // Hide all content
+            contents.forEach(content => content.style.display = 'none');
 
-                    // Show the first tab content by default
-                    document.addEventListener('DOMContentLoaded', () => {
-                        showTabContent(1);
-                    });
-                </script>
+            // Show selected content
+            document.getElementById(`tab${tabIndex}-content`).style.display = 'block';
+
+            // Add box shadow to the tab-content container
+            document.getElementById(`tab-content`).style['box-shadow'] = 
+                '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';
+
+            // Save the active tab index to localStorage
+            localStorage.setItem('activeTab', tabIndex);
+        }
+
+        // Show the tab content based on localStorage or default to the first tab
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeTab = localStorage.getItem('activeTab') || 1; // Get saved tab index or default to 1
+            showTabContent(activeTab);
+        });
+    </script>
+
 </body>
 
 </html>
