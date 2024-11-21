@@ -74,20 +74,23 @@ p {
   }
 }
 
-iframe {
-  display: block;
-  margin: 0 auto; /* Centers horizontally */
-  position: relative; /* Ensure proper placement */
-  max-width: 560px;
-  height: auto;
-}
-
 .video-container {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  height: 100vh; /* Full viewport height for vertical centering */
+  min-height: 300px; /* Adjust minimum height for the video container */
+  margin: 20px auto; /* Add spacing between this and other content */
+  padding: 0; /* No extra padding around the video */
 }
+
+iframe {
+  max-width: 100%; /* Makes the iframe responsive */
+  width: 560px; /* Explicit width for the video */
+  height: 315px; /* Standard YouTube aspect ratio (16:9) */
+  display: block; /* Keeps the iframe block-aligned */
+}
+
+
 
 
 /* Center Titles */
