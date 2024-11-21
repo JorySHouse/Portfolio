@@ -1,67 +1,104 @@
 /* General Styles */
 body {
-    background-color: #f7efd6; /* Light Beige */
-    color: #333333; /* Subtle Black */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    font-weight: bold; /* All text bold */
+  background-color: #f7efd6; /* Light Beige */
+  color: #333333; /* Subtle Black */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: bold; /* All text bold */
 }
 
 header {
-    background-color: #3e3e3e; /* Charcoal */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+  background-color: #3e3e3e; /* Charcoal */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+  margin: 0;
+  font-size: 2.5rem;
 }
 
 p {
-    line-height: 2rem;
+  line-height: 2rem;
 }
 
 /* About Me Section */
 #about {
-    background-color: #f7efd6; /* Same beige as rest of the page */
-    padding: 40px 20px;
-    text-align: center;
-    border-top: 5px solid #8eaebd; /* Accent Border */
-    border-bottom: 5px solid #8eaebd;
+  background-color: #f7efd6; /* Same beige as rest of the page */
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 5px solid #8eaebd; /* Accent Border */
+  border-bottom: 5px solid #8eaebd;
 }
 
-#about h2, #about p, #virtual-portfolio h3 {
-    margin-bottom: 20px;
+#about h2,
+#about p,
+#virtual-portfolio h3 {
+  margin-bottom: 20px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tabs-team-projects {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: auto;
+  margin-bottom: 30px;
 }
 
 /* Tabs Section */
-.tabs {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    gap: 10px;
-    margin: 20px 0;
+.tabs-solo-projects {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1377px) {
+  .tabs-solo-projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .tabs-team-projects {
+    justify-content: center;
+  }
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  margin: auto;
 }
 
 /* Center Titles */
 .centered-title {
-    text-align: center;
-    margin-bottom: 20px; /* Add space below the titles */
-    font-size: 1.8rem; /* Adjust font size */
-    font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px; /* Add space below the titles */
+  font-size: 1.8rem; /* Adjust font size */
+  font-weight: bold;
 }
 
 /* Center and Limit Width for Text Content Only */
 .text-container {
-    max-width: 800px; /* Limit text width */
-    margin: 0 auto; /* Center text horizontally */
-    padding: 0 20px; /* Add padding to the sides for breathing room */
+  max-width: 800px; /* Limit text width */
+  margin: 0 auto; /* Center text horizontally */
+  padding: 0 20px; /* Add padding to the sides for breathing room */
 }
 
-.tab-button {
+@media only screen and (max-width: 1377px) {
+  .tab-button {
+    margin: none;
     flex: 1;
     padding: 15px;
     background-color: #8eaebd; /* Accent color */
@@ -69,69 +106,91 @@ p {
     color: white;
     cursor: pointer;
     text-align: center;
+    max-width: 25rem;
+    font-weight: 600;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media only screen and (min-width: 1378px) {
+  .tab-button {
+    flex: 1;
+    padding: 15px;
+    background-color: #8eaebd; /* Accent color */
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    max-width: 25rem;
+    margin: auto;
+    font-weight: 600;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .tab-button:hover {
-    background-color: #5f8395;
+  background-color: #5f8395;
 }
 
 /* Dynamic Content Section */
 #tab-content {
-    background-color: #ffffff; /* White background */
-    padding: 40px;
-    border-radius: 10px;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 90%; /* Margins for text to avoid edge alignment */
+  background-color: #ffffff; /* White background */
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto 4rem auto;
+  max-width: 80%; /* Margins for text to avoid edge alignment */
 }
 
 /* Content Sections */
 .content {
-    display: none; /* Hidden by default */
+  display: none; /* Hidden by default */
 }
 
-.content h3, .content h4 {
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    text-align: center;
+.content h3,
+.content h4 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 /* Text and Video Section Formatting */
 .text-video-section {
-    text-align: start; /* Align text to the left */
-    margin: auto; /* Center the entire section */
-    width: 50%; /* Limit the width */
-    padding: 20px; /* Add padding for better readability */
+  text-align: start; /* Align text to the left */
+  margin: auto; /* Center the entire section */
+  padding: 20px; /* Add padding for better readability */
 }
 
 /* Video Section */
 video {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    margin: auto;
-    display: flex;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  margin: auto;
+  display: flex;
 }
 
 /* Color Coding for Elemental Stances */
 .fire {
-    color: #d9534f; /* Red */
+  color: #d9534f; /* Red */
 }
 
 .water {
-    color: #5bc0de; /* Blue */
+  color: #5bc0de; /* Blue */
 }
 
 .lightning {
-    color: #f0ad4e; /* Yellow */
+  color: #f0ad4e; /* Yellow */
 }
 
 .wind {
-    color: #5cb85c; /* Green */
+  color: #5cb85c; /* Green */
 }
 
 /* Highlighted Text */
 .highlight {
-    color: #990000; /* Deep Crimson */
-    font-weight: bold;
+  color: #990000; /* Deep Crimson */
+  font-weight: bold;
 }
