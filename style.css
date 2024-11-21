@@ -75,20 +75,11 @@ p {
 }
 
 iframe {
-  display: block;
-  margin: 0 auto; /* Centers horizontally */
-  position: relative; /* Ensure proper placement */
+  position: relative;
+  width: 100%;
   max-width: 560px;
-  height: auto;
+  margin: auto;
 }
-
-.video-container {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Full viewport height for vertical centering */
-}
-
 
 /* Center Titles */
 .centered-title {
