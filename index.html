@@ -13,24 +13,24 @@
 
     <!-- About Me Section -->
     <section id="about">
-    	<div class="container text-container">
-        	<div class="container">
-            	<h2>About Me</h2>
-            	<p>
-               		I am a game designer with a B.A. in Game Design, specializing in Unreal Engine, C++, and Blueprints. 
-                	While I focus on combat and enemy mechanics, my experience spans various genres, including multiplayer, 
-                	mobile, and RPGs. If you're interested in collaborating, please contact me.
-            	</p>
-		</br>
-            	<div id="virtual-portfolio">
-                	<h3>My Socials and Itch Page</h3>
-                    	<a href="https://www.linkedin.com/in/jory-house/" target="_blank">LinkedIn</a><br>
-                    	<a href="https://onthehouse-gaming.itch.io/" target="_blank">itch.io</a><br>
-                    	<a href="https://drive.google.com/file/d/1BQcwUbVE0LJx7Ri_nbMK6L5ZfHegAJdv/view?usp=sharing" target="_blank">Resume</a>
-            	</div>
+        <div class="container text-container">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    I am a game designer with a B.A. in Game Design, specializing in Unreal Engine, C++, and Blueprints.
+                    While I focus on combat and enemy mechanics, my experience spans various genres, including multiplayer,
+                    mobile, and RPGs. If you're interested in collaborating, please contact me.
+                </p>
+                <br>
+                <div id="virtual-portfolio">
+                    <h3>My Socials and Itch Page</h3>
+                    <a href="https://www.linkedin.com/in/jory-house/" target="_blank">LinkedIn</a><br>
+                    <a href="https://onthehouse-gaming.itch.io/" target="_blank">itch.io</a><br>
+                    <a href="https://drive.google.com/file/d/1BQcwUbVE0LJx7Ri_nbMK6L5ZfHegAJdv/view?usp=sharing" target="_blank">Resume</a>
+                </div>
+            </div>
         </div>
     </section>
-
 
     <!-- Tabs Section -->
     <section id="tabs-section">
@@ -54,16 +54,39 @@
         </div>
     </section>
 
+    <!-- Dynamic Content Section -->
+    <div id="tab-content">
+        <!-- Tab 1 Content -->
+        <div class="content" id="tab1-content">
+            <h3>Pantheon Rift: Project Overview</h3>
 
-     <!-- Dynamic Content Section -->
-    	<div id="tab-content">
-        	<!-- Tab 1 Content: Pantheon Rift -->
-        	<div class="content" id="tab1-content">
-            	<h3>Pantheon Rift: Placeholder</h3>
-            	<p>
-                	This is a placeholder for the Pantheon Rift project. Details about this team-based project will be added soon.
-           	 </p>
+            <!-- Trailer Video -->
+            <div class="video-section">
+                <h4>Trailer Video</h4>
+                <video autoplay loop muted controls width="560" height="315">
+                    <source src="https://youtu.be/0yG-Uzl9f5g?si=53UHBRy0eGEUnSpf" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Contributions -->
+            <div class="text-video-section">
+                <h4>Contributions</h4>
+                <p>
+                    As part of the development team for Pantheon Rift, the following contributions were made to enhance the gameplay and systems:
+                </p>
+                <ul>
+                    <li><strong>Animation Retargeting:</strong> Adapted animations for different character meshes and skeletons using Unreal Engine's retargeting tools, ensuring consistent and high-quality animations across all character models.</li>
+                    <li><strong>Attack Data Management:</strong> Created data assets for weapon attacks, including variables for animation montages, speeds, and sound effects. Integrated these assets into weapon blueprints to streamline combo setups.</li>
+                    <li><strong>Combat Mechanics Development:</strong> Implemented melee and ranged weapon systems, including equipping, attacking, and blocking mechanics. Contributed to features inspired by souls-likes and casual shooters.</li>
+                    <li><strong>Dodge System:</strong> Developed a dodge mechanic using vector math for directionality, with root motion for smooth animations and invincibility frames (I-frames) for balanced gameplay.</li>
+                    <li><strong>Poise and Stagger System:</strong> Designed a poise mechanic to prevent player stagger, integrated poise damage into weapon interactions, and implemented regeneration with visual feedback systems.</li>
+                    <li><strong>AI Spawning Systems:</strong> Optimized AI spawning processes by developing dynamic spawning mechanics, allowing creatures like sheep to spawn within specified radii with randomized positions and orientations.</li>
+                    <li><strong>Enemy Formation Systems:</strong> Designed coordinated enemy attacks and formations with telegraphed abilities, requiring strategic player responses to dynamic encounters.</li>
+                </ul>
+            </div>
         </div>
+
 
 
         <div id="tab-content">
