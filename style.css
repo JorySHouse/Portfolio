@@ -12,7 +12,7 @@ header {
   background-color: #3e3e3e; /* Charcoal */
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 header h1 {
@@ -27,11 +27,12 @@ p {
 /* About Me Section */
 #about {
   background-color: #f7efd6; /* Same beige as rest of the page */
-  padding: 40px 20px;
+  padding: 20px 10px;
   text-align: center;
   border-top: 5px solid #8eaebd; /* Accent Border */
   border-bottom: 5px solid #8eaebd;
 }
+
 
 #about h2,
 #about p,
