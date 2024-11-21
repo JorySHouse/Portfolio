@@ -39,22 +39,30 @@ p {
   margin-bottom: 20px;
 }
 
-#virtual-portfolio .content-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Adjust spacing between sections */
-    flex-wrap: wrap; /* Optional: ensures responsiveness for smaller screens */
-}
-
-.socials, .resume {
+#virtual-portfolio {
     text-align: center;
 }
 
-.socials a img, .resume a img {
-    max-width: 100px; /* Adjust icon size */
-    margin: 5px;
+#virtual-portfolio .content-row {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Aligns items vertically */
+    gap: 40px; /* Adjust spacing between sections */
+    flex-wrap: wrap; /* Ensures responsiveness */
 }
+
+.socials, .resume {
+    display: flex;
+    flex-direction: column; /* Stack text above icons */
+    align-items: center;
+    gap: 10px; /* Adjust spacing between text and icons */
+}
+
+.socials h3, .resume h3 {
+    margin: 0;
+    font-size: 1rem; /* Adjust as needed */
+}
+
 
 
 .tabs-team-projects {
