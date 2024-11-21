@@ -33,11 +33,6 @@ p {
   border-bottom: 5px solid #8eaebd;
 }
 
-#about h2,
-#about p,
-#virtual-portfolio h3 {
-  margin-bottom: 20px;
-}
 
 #virtual-portfolio {
     text-align: center;
