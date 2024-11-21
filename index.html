@@ -382,10 +382,7 @@
                 <!-- Trailer Video -->
                 <div class="video-section">
                     <h4>Trailer Video</h4>
-                    <video autoplay loop muted controls width="560" height="315">
-                        <source src="trailer-placeholder.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_G_P15WolEw?si=BMZzHuWNDwHtGcVO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
                 <!-- Project Goals -->
@@ -465,7 +462,7 @@
                         - <strong>Fan Tile:</strong> Spreads the player's blob color to all tiles in a straight line.
                     </p>
                     <video autoplay loop muted controls width="560" height="315">
-                        <source src="engine-optimization-placeholder.mp4" type="video/mp4">
+                        <source src="Videos/MapGenerator (1).mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -484,6 +481,10 @@
                         function to identify and alter neighboring tiles' colors.
                         Smaller blobs interpolate to the center of each affected tile for a visually impactful effect.
                     </p>
+                    <video autoplay loop muted controls width="560" height="315">
+                        <source src="Videos/Bomb (1).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <p>
                         <strong>Fan Mechanic:</strong> This tile blows the player's color across a straight line of
                         tiles, excluding any between the player and the fan.
@@ -491,7 +492,7 @@
                         carefully for tactical advantage.
                     </p>
                     <video autoplay loop muted controls width="560" height="315">
-                        <source src="mechanics-placeholder.mp4" type="video/mp4">
+                        <source src="Videos/Fan (1).mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -555,12 +556,10 @@
                         powered by batteries, and the player must pull these batteries out to defeat them.</strong>
                     </p>
                 </div>
-
-    <div id="slideshow">
-        <img class="slide active" src="Videos/Grapple_Pull1.png" alt="Slide 1">
-        <img class="slide" src="Videos/Grapple_Pull2.png" alt="Slide 2">
-        <img class="slide" src="Videos/Grapple_Pull3.png" alt="Slide 3">
-    </div>
+                    <video autoplay loop muted controls width="560" height="315">
+                        <source src="Videos/Untitled design.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
 
                 <!-- Enemy Design Pillars -->
                 <div class="text-video-section">
@@ -619,7 +618,7 @@
                         combat, adding intensity and challenge.
                     </p>
                     <video autoplay loop muted controls width="560" height="315">
-                        <source src="prototyping-placeholder.mp4" type="video/mp4">
+                        <source src="Videos/ezgif.com-gif-to-mp4-converter (1).mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -670,26 +669,7 @@
         });
     </script>
 
- <script>
-        // JavaScript for Slideshow
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
-        const totalSlides = slides.length;
 
-        function showNextSlide() {
-            // Hide the current slide
-            slides[currentSlide].classList.remove('active');
-
-            // Move to the next slide
-            currentSlide = (currentSlide + 1) % totalSlides;
-
-            // Show the new current slide
-            slides[currentSlide].classList.add('active');
-        }
-
-        // Set the slideshow to cycle every 3 seconds
-        setInterval(showNextSlide, 3000);
-    </script>
 
 </body>
 
