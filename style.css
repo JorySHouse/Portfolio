@@ -8,7 +8,6 @@ body {
     font-weight: bold; /* All text bold */
 }
 
-
 header {
     background-color: #3e3e3e; /* Charcoal */
     color: white;
@@ -41,18 +40,6 @@ header h1 {
     justify-content: space-between;
     gap: 10px;
     margin: 20px 0;
-}
-
-.text-video-section {
-    text-align: start;
-    margin: auto;
-    width: 50%;
-}
-
-.text-video-section {
-    text-align: start;
-    margin: auto;
-    width: 50%;
 }
 
 /* Center Titles */
@@ -102,6 +89,14 @@ header h1 {
 .content h3, .content h4 {
     margin-bottom: 20px;
     font-size: 1.8rem;
+}
+
+/* Text and Video Section Formatting */
+.text-video-section {
+    text-align: start; /* Align text to the left */
+    margin: auto; /* Center the entire section */
+    width: 50%; /* Limit the width */
+    padding: 20px; /* Add padding for better readability */
 }
 
 /* Video Section */
