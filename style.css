@@ -53,7 +53,7 @@ header h1 {
 
 /* Center and Limit Width for Text Content Only */
 .text-container {
-    max-width: 800px; /* Limit text width */
+    max-width: 200px; /* Limit text width */
     margin: 0 auto; /* Center text horizontally */
     padding: 0 20px; /* Add padding to the sides for breathing room */
 }
