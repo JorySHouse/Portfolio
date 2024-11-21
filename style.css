@@ -74,12 +74,24 @@ p {
   }
 }
 
-iframe {
-  position: relative;
-  width: 100%;
-  max-width: 560px;
-  margin: auto;
+.video-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 300px; /* Adjust minimum height for the video container */
+  margin: 20px auto; /* Add spacing between this and other content */
+  padding: 0; /* No extra padding around the video */
 }
+
+iframe {
+  max-width: 100%; /* Makes the iframe responsive */
+  width: 560px; /* Explicit width for the video */
+  height: 315px; /* Standard YouTube aspect ratio (16:9) */
+  display: block; /* Keeps the iframe block-aligned */
+}
+
+
+
 
 /* Center Titles */
 .centered-title {
