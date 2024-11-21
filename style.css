@@ -75,12 +75,12 @@ p {
 }
 
 iframe {
-  display: block; /* Ensures proper margin behavior */
-  width: 100%; /* Responsive width to fit the container */
-  max-width: 560px; /* Limit to standard YouTube width */
-  height: calc(560px * 9 / 16); /* Maintain 16:9 aspect ratio */
-  margin: 20px auto; /* Center horizontally and add spacing */
-  border: none; /* Clean appearance */
+  width: 100%;
+  max-width: 560px;
+  height: calc(100vw * 9 / 16); /* Calculate height dynamically */
+  margin: 20px auto;
+  display: block;
+  border: none;
 }
 
 
