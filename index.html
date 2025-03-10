@@ -128,121 +128,249 @@
 
 
 
-<div id="tab-content">
-    <!-- Tab 2 Content -->
-    <div class="content" id="tab2-content">
-        <h3>Solace</h3>
-        </br>
-        <iframe frameborder="0" src="https://itch.io/embed/1594306?bg_color=ffffff" width="552" height="167"><a href="https://onthehouse-gaming.itch.io/solace">Solace by OnTheHouse Gaming</a></iframe>
-        </br>
-        <p>
-            Designer and Programmer - Action RPG
-        </p>
-        
-        <!-- Trailer Video -->
-        <div class="video-section">
-            <h4>Trailer Video</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xUakY6cO_gs?si=Ob-MUiUqoTpSBIJO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+        <div id="tab-content">
+            <!-- Tab 2 Content -->
+            <div class="content" id="tab2-content">
+                <h3>Solace</h3>
+                </br>
+<iframe frameborder="0" src="https://itch.io/embed/1594306?bg_color=ffffff" width="552" height="167"><a href="https://onthehouse-gaming.itch.io/solace">Solace by OnTheHouse Gaming</a></iframe>
+                </br>
+                <p>
+                    Designer and Programmer - Action RPG
+                </p>
 
-        <!-- Accomplishments -->
-        <div class="text-video-section">
-            <h4>Accomplishments</h4>
-            <p><span class="highlight">Primary Developer of Ability and Combat Systems:</span> Led the design and implementation of the game's intricate ability system and engaging enemy attack system.</p>
-            <p><span class="highlight">Innovative Targeting System Development:</span> Developed the Priority Target System, integrating stance-based targeting for enhanced combat dynamics.</p>
-            <p><span class="highlight">Hot Bar System Optimization:</span> Streamlined the Hot Bar by reducing slots and centralizing logic for improved gameplay interaction.</p>
-            <p><span class="highlight">Elemental Stances Mechanic Implementation:</span> Created and refined the Elemental Stances system, enhancing combat strategy and player choice.</p>
-            <p><span class="highlight">Teleportation System Overhaul:</span> Redesigned the teleportation mechanic from an ally-based to a player-centric system, increasing player control and game narrative integration.</p>
-            <p><span class="highlight">Enemy Ability and Formation System Design:</span> Crafted dynamic enemy encounters using timed attack abilities and formation tactics.</p>
-        </div>
+            <!-- Trailer Video -->
+            	<div class="video-section">
+                <h4>Trailer Video</h4>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/xUakY6cO_gs?si=Ob-MUiUqoTpSBIJO" title="YouTube video player" frameborder="0" 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-			origin" allowfullscreen></iframe>
+            	</div>
 
-        <!-- Priority Target System -->
-        <div class="text-video-section">
-            <h4>Priority Target System</h4>
-            <p>
-                In my research on targeting systems, I observed that most games use direction and distance for manual enemy lock-on.
-                Innovating on this, I considered expanding targeting factors to include abilities and elemental stances.
-                This led to the development of the Priority Target System, which offers both a traditional manual lock-on with a focus camera
-                and a 'no lock' option where the system aids the player based on their current stance.
-            </p>
-            <p>Stance Specifics</p>
-            <p>
-                Base/<strong class="fire">Fire</strong>/<strong class="water">Water</strong>: Auto-attack and close distance to the nearest enemy.<br>
-                <strong class="lightning">Lightning:</strong> Prioritize interrupting enemy casts, then target distant foes.<br>
-                <strong class="wind">Wind:</strong> Focus on enemies within AoE range.
-            </p>
-            <p>System Benefits</p>
-            <p>
-                Reduces target cycling.<br>
-                Guides new players on stance and ability usage.<br>
-                Allows player choice for targeting priority.
-            </p>
-        </div>
-        
-        <!-- Elemental Stances -->
-        <div class="text-video-section">
-            <h4>Elemental Stances</h4>
-            <p>
-                Players can switch between the following stances to enhance strategy and combat choices:
-            </p>
-            <p>
-                <span class="fire">Fire:</span> High single target damage.<br>
-                <span class="water">Water:</span> Crowd control.<br>
-                <span class="lightning">Lightning:</span> Ranged abilities for distant foes.<br>
-                <span class="wind">Wind:</span> Area of effect attacks.
-            </p>
-        </div>
 
-        <!-- Combat Design -->
-        <div class="text-video-section">
-            <h4>Combat Design</h4>
-            <p>
-                Sora’s Keyblade in Kingdom Hearts sets a high standard for RPG combat with its weighty and impactful animations, creating a sense of momentum and realism in every swing. Inspired by this, I aimed to replicate that satisfying feel in my game’s basic attacks. Through careful animation selection and adjustments, I fine-tuned the motions to deliver a similar sense of impact, ensuring each strike feels fluid, powerful, and rewarding for the player.
-            </p>
-            <video autoplay loop muted controls width="560" height="315">
-                <source src="Videos/KingdomHeartsSidebySide2-ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+                <!-- Project Goals -->
+                <div class="text-video-section">
+                    <h4>Project Goals</h4>
+                    <p>
+                        I wanted to create an RPG that gave the player a wide range of abilities without forcing them to
+                        choose between a few and still be executable within a few button presses.
+                        Inspired by Final Fantasy 14, I used trigger buttons as gates for ability usage, enabling more
+                        abilities with minimal button clutter.
+                    </p>
+                    <p>
+                        Another goal was to design enemies that worked together, using timed attacks and formations.
+                        Ground telegraphs created engaging scenarios, requiring the player to solve puzzles in combat
+                        and align with level design.
+                    </p>
+                </div>
 
-        <!-- Enemy Formation System -->
-        <div class="text-video-section">
-            <h4>Enemy Formation System</h4>
-            <p>
-                I aimed to design enemies that challenge players both individually and as coordinated groups, enhancing combat dynamics and immersion. By demonstrating enemies working together, players face strategic challenges that require quick thinking and precise movement. A key design philosophy behind the enemy formations is to simulate intelligent behavior you would see with real squads of soldiers. Enemies are programmed to work together, creating dynamic encounters.
-            </p>
-            <video autoplay loop muted controls width="560" height="315">
-                <source src="Videos/NewFormationForWebsite1-ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+                <!-- Accomplishments -->
+                <div class="text-video-section">
+                    <h4>Accomplishments</h4>
+                    <p><span class="highlight">Primary Developer of Ability and Combat Systems:</span> Led the design
+                        and implementation of the game's intricate ability system and engaging enemy attack system.</p>
+                    <p><span class="highlight">Innovative Targeting System Development:</span> Developed the Priority
+                        Target System, integrating stance-based targeting for enhanced combat dynamics.</p>
+                    <p><span class="highlight">Hot Bar System Optimization:</span> Streamlined the Hot Bar by reducing
+                        slots and centralizing logic for improved gameplay interaction.</p>
+                    <p><span class="highlight">Elemental Stances Mechanic Implementation:</span> Created and refined the
+                        Elemental Stances system, enhancing combat strategy and player choice.</p>
+                    <p><span class="highlight">Teleportation System Overhaul:</span> Redesigned the teleportation
+                        mechanic from an ally-based to a player-centric system, increasing player control and game
+                        narrative integration.</p>
+                    <p><span class="highlight">Enemy Ability and Formation System Design:</span> Crafted dynamic enemy
+                        encounters using timed attack abilities and formation tactics.</p>
+                </div>
 
-        <!-- Player Ability System -->
-        <div class="text-video-section">
-            <h4>Player Ability System</h4>
-            <p>
-                Inspired by Final Fantasy 14, I aimed to create an ability system that makes players feel powerful and in control. The design mirrors the concept of having a "rotation," where players can maximize damage by finding the optimal arrangement and usage of abilities with their cooldowns.
-            </p>
-        </div>
+                <!-- Priority Target System -->
+                <div class="text-video-section">
+                    <h4>Priority Target System</h4>
+                    <p>
+                        In my research on targeting systems, I observed that most games use direction and distance for
+                        manual enemy lock-on.
+                        Innovating on this, I considered expanding targeting factors to include abilities and elemental
+                        stances.
+                        This led to the development of the Priority Target System, which offers both a traditional
+                        manual lock-on with a focus camera
+                        and a 'no lock' option where the system aids the player based on their current stance.
+                    </p>
+                    <p>Stance Specifics</p>
+                    <p>
+                        Base/<strong class="fire">Fire</strong>/<strong class="water">Water</strong>: Auto-attack and
+                        close distance to the nearest enemy.<br>
+                        <strong class="lightning">Lightning:</strong> Prioritize interrupting enemy casts, then target
+                        distant foes.<br>
+                        <strong class="wind">Wind:</strong> Focus on enemies within AoE range.
+                    </p>
+                    <p>System Benefits</p>
+                    <p>
+                        Reduces target cycling.<br>
+                        Guides new players on stance and ability usage.<br>
+                        Allows player choice for targeting priority.
+                    </p>
+                </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eCDw2UCcu1Y?si=8hIGQhaWn0apwHU2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <!-- Critical Hits -->
-        <div class="text-video-section">
-            <h4>Critical Hits</h4>
-            <p>
-                Critical hits in Solace aren't random. Instead, they're triggered by ability synergies. For instance, applying the Burn status and following up with a Water attack creates an explosion for a critical hit. Critical hits throw enemies off balance, with bold text feedback for players. In this example, Fire abilities followed by Water create dense steam signalling to the player that something has happened.
-            </p>
-        </div>
 
-        <!-- Hot Bar -->
-        <div class="text-video-section">
-            <h4>Hot Bar</h4>
-            <p>
-                The Hot Bar allows quick access to abilities segmented by gamepad triggers for intuitive gameplay. Originally designed with 16 buttons, playtesting revealed that a more streamlined approach was needed.
-            </p>
-        </div>
-    </div>
-</div>
+                <!-- Elemental Stances -->
+                <div class="text-video-section">
+                    <h4>Elemental Stances</h4>
+                    <p>
+                        Players can switch between the following stances to enhance strategy and combat choices:
+                    </p>
+                    <p>
+                        <span class="fire">Fire:</span> High single target damage.<br>
+                        <span class="water">Water:</span> Crowd control.<br>
+                        <span class="lightning">Lightning:</span> Ranged abilities for distant foes.<br>
+                        <span class="wind">Wind:</span> Area of effect attacks.
+                    </p>
+                </div>
 
+                <!-- Critical Hits -->
+                <div class="text-video-section">
+                    <h4>Critical Hits</h4>
+                    <p>
+                        Critical hits in Solace aren't random. Instead, they're triggered by ability synergies. For
+                        instance, applying the Burn status and following up with a Water attack creates an explosion for
+                        a critical hit. Critical hits throw enemies off balance, with bold text feedback for players. In this example, Fire abilities followed by Water create dense steam signalling to the player that something has happened. 
+                    </p>
+                    <video autoplay loop muted controls width="560" height="315">
+                        <source src="Videos/CriticalHit1-ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Combat Design -->
+                <div class="text-video-section">
+                    <h4>Combat Design</h4>
+                    <p>
+                        Sora’s Keyblade in Kingdom Hearts sets a high standard for RPG combat with its weighty and
+                        impactful animations, creating a sense of momentum and realism in every swing. Inspired by this,
+                        I aimed to replicate that satisfying feel in my game’s basic attacks. Through careful animation
+                        selection and adjustments, I fine-tuned the motions to deliver a similar sense of impact,
+                        ensuring each strike feels fluid, powerful, and rewarding for the player.
+                    </p>
+                    <video autoplay loop muted controls width="560" height="315">
+                        <source src="Videos/KingdomHeartsSidebySide2-ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+
+                <!-- Player Ability System -->
+                <div class="text-video-section">
+                    <h4>Player Ability System</h4>
+                    <p>
+                        Inspired by Final Fantasy 14, I aimed to create an ability system that makes players feel
+                        powerful and in control. The design mirrors the concept of having a "rotation," where players
+                        can maximize damage by finding the optimal arrangement and usage of abilities with their
+                        cooldowns.
+                    </p>
+                    <p>
+                        The system includes abilities that inflict debuffs and damage over time (DoT). Players need to
+                        keep their DoT abilities active and maintain debuffs on enemies, then use finishers to maximize
+                        their damage output. This approach reflects the strategic rotations found in MMOs, encouraging
+                        players to think critically about their ability usage.
+                    </p>
+                    <p>
+                        The abilities in "Solace" feature a horizontal progression system. Players collect materials
+                        from fallen enemies to upgrade abilities, enhancing their strength and adding new effects. For
+                        example, upgrading the "Bubble" ability traps enemies in water and deals damage over time.
+                    </p>
+                    <p>
+                        When designing "Solace," I faced constraints due to my limited skills in animation and VFX,
+                        which led to removing some planned skills. To tackle this, I creatively used available
+                        marketplace assets, tailoring animations to fit various abilities and managing the budget for
+                        essential animations.
+                    </p>
+                    <video autoplay loop muted controls width="560" height="315">
+                        <source src="Videos/EnhanceAbility1-ezgif.com-gif-to-mp4-converter.mp4"video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Enemy Formation System -->
+                <div class="text-video-section">
+                    <h4>Enemy Formation System</h4>
+                    <p>
+                        I aimed to design enemies that challenge players both individually and as coordinated groups,
+                        enhancing combat dynamics and immersion. By demonstrating enemies working together, players face
+                        strategic challenges that require quick thinking and precise movement. A key design philosophy
+                        behind the enemy formations is to simulate intelligent behavior you would see with real squads
+                        of soldiers. Enemies are programmed to work together, creating dynamic encounters.
+                    </p>
+                    <p>
+                        The combat system features enemies with timed attack abilities, highlighted by ground telegraphs
+                        for player anticipation. Telegraphing attacks becomes crucial when multiple enemies use
+                        abilities simultaneously or as part of formations, creating small "puzzle" encounters that
+                        require strategic player responses.
+                    </p>
+                    <p>
+                        Ensuring that the difficulty level remains fair while still challenging is crucial. To achieve
+                        this, enemies display the names of the abilities they are using. This allows players to memorize
+                        and recognize incoming attacks, giving them the opportunity to anticipate and react
+                        appropriately in future encounters. The design philosophy focuses on providing clear feedback
+                        and opportunities for the player to learn and adapt.
+                    </p>
+                    <p>
+                        The coordinated enemy attacks are designed to encourage players to think strategically. Players
+                        must analyze enemy formations, predict their movements, and respond with appropriate abilities.
+                        This promotes a deeper level of engagement and rewards players for mastering the game's
+                        mechanics.
+                    </p>
+                    <video autoplay loop muted controls width="560" height="315">
+                        <source src="Videos/NewFormationForWebsite1-ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Teleportation System -->
+                <div class="text-video-section">
+                    <h4>Teleportation System</h4>
+                    <p>
+                        The teleportation feature in Solace allows players to move instantly to specific locations
+                        within a defined range. This mechanic is vital for dodging enemy attacks and uncovering hidden
+                        paths, offering players a dynamic tool for both combat and exploration. By enhancing mobility,
+                        it maintains player engagement and enables strategic gameplay.
+                    </p>
+                    <p>
+                        Initially, the teleportation system was tied to an ally character, which restricted movement and
+                        limited its effectiveness. To better align with the game's elemental theme, I reimagined
+                        teleportation as a lightning-based ability. This redesign not only integrated it into the game's
+                        world but also empowered players with greater control. The mechanic now allows players to
+                        respond quickly to enemy formations and reposition strategically during combat.
+                    </p>
+                    <p>
+                        The system also includes a unique mechanic called "Teleport Strike," where players can teleport
+                        behind enemies and deliver a precise counterattack. This ability emphasizes timing and reflexes,
+                        adding depth to combat interactions and reinforcing the sense of mastery in gameplay. By
+                        leveraging existing assets and systems, I crafted a responsive and thematic teleportation
+                        mechanic that enhances both the narrative and the player's experience.
+                    </p>
+                    <video autoplay loop muted controls width="560" height="315">
+                        <source src="Videos/StormsTeleport1-ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Hot Bar -->
+                <div class="text-video-section">
+                    <h4>Hot Bar</h4>
+                    <p>
+                        The Hot Bar allows quick access to abilities segmented by gamepad triggers for intuitive
+                        gameplay. Originally designed with 16 buttons, playtesting revealed that a more streamlined
+                        approach was needed. I reduced the Hot Bar to 8 buttons, maintaining the game's core goals while
+                        minimizing UI clutter and ensuring each ability was distinct and meaningful.
+                    </p>
+                    <p>
+                        The Hot Bar tracks cooldown times, ability resource costs, and ability status, expanding as
+                        needed and clearly indicating locked abilities, providing players with an intuitive and
+                        efficient interface.
+                    </p>
+                    <video autoplay loop muted controls width="560" height="315">
+                        <source src="Videos/Untitled video - Made with Clipchamp (2) (1).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
 
 
