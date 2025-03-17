@@ -678,7 +678,7 @@
                                 allowfullscreen>
                         </iframe>
                         <p>
-                            A playlist collection of various playthroughs of the game by streamers. 
+                            A playlist collection of various playthroughs of the game by streamers.
                         </p>
 
                     </div>
@@ -761,7 +761,12 @@
                         contents.forEach(content => content.style.display = 'none');
 
                         // Show selected content
-                        document.getElementById(`tab${tabIndex}-content`).style.display = 'block';
+                        const tabContent = document.getElementById(`tab${tabIndex}-content`);
+                        if (tabContent) {
+                            tabContent.style.display = 'block';
+                        } else {
+                            console.error(`Tab ${tabIndex} content not found!`);
+                        }
 
                         // Add box shadow to the tab-content container
                         document.getElementById(`tab-content`).style['box-shadow'] =
@@ -773,10 +778,11 @@
 
                     // Show the tab content based on localStorage or default to the specified default tab
                     document.addEventListener('DOMContentLoaded', () => {
-                        const activeTab = localStorage.getItem('activeTab') || defaultTabIndex; // Use defaultTabIndex instead of hardcoded 1
+                        let activeTab = parseInt(localStorage.getItem('activeTab')) || defaultTabIndex; // Ensure it's a number
                         showTabContent(activeTab);
                     });
                 </script>
+
 
 
 
