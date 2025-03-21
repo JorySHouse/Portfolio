@@ -8,6 +8,10 @@ body {
   font-weight: bold; /* All text bold */
 }
 
+.button-border {
+    border: 2px solid black;
+}
+
 header {
   background-color: #3e3e3e; /* Charcoal */
   color: white;
@@ -137,12 +141,13 @@ iframe {
 
 /* Dynamic Content Section */
 #tab-content {
-  background-color: #ffffff; /* White background */
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-  margin: 0 auto 4rem auto;
-  max-width: 80%; /* Margins for text to avoid edge alignment */
+    background-color: #ffffff; /* White background */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto 4rem auto;
+    max-width: 80%; /* Margins for text to avoid edge alignment */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
 /* Content Sections */
