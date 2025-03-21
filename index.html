@@ -749,8 +749,8 @@
                 </section>
 
                 <script>
-                    // Set the default tab index (change this to whatever tab you want as default)
-                    const defaultTabIndex = 5; // Change this number to your desired default tab
+                    // Set the default tab index
+                    const defaultTabIndex = 5;
 
                     // Function to show content based on the tab clicked
                     function showTabContent(tabIndex) {
@@ -769,7 +769,7 @@
                         }
 
                         // Add box shadow to the tab-content container
-                        document.getElementById(`tab-content`).style['box-shadow'] =
+                        document.getElementById(`tab${tabIndex}-content`).style['box-shadow'] =
                             '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';
 
                         // Save the active tab index to localStorage
