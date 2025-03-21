@@ -8,10 +8,6 @@ body {
   font-weight: bold; /* All text bold */
 }
 
-.button-border {
-    border: 2px solid black;
-}
-
 header {
   background-color: #3e3e3e; /* Charcoal */
   color: white;
@@ -67,6 +63,10 @@ p {
   gap: 1.5rem;
   margin: auto;
   margin-bottom: 30px;
+}
+
+.button-border {
+    border: 2px solid black;
 }
 
 @media only screen and (max-width: 1377px) {
