@@ -32,14 +32,13 @@
                             <img src="./public/svg/linkedin.png" alt="">
                         </a><br>
                         <a href="https://onthehouse-gaming.itch.io/" target="_blank">
-                            <img src="./public/svg/itch-io.png"
-                                 alt="">
+                            <img src="./public/svg/itch-io.png" alt="">
                         </a><br>
 
                     </div>
                     <h3>Resumé</h3>
                     <a href="https://drive.google.com/file/d/1kqmnE-D3kUvppAaxUJFBYOSbVZKhoWUu/view?usp=sharing"
-                       target="_blank"><img src="public/svg/resume.png" alt=""></a>
+                        target="_blank"><img src="public/svg/resume.png" alt=""></a>
                 </div>
 
             </div>
@@ -63,14 +62,15 @@
             <div class="tabs-solo-projects">
                 <button id="tab-button-2" class="tab-button" onclick="showTabContent(2)">Solace</button>
                 <button id="tab-button-3" class="tab-button" onclick="showTabContent(3)">Palette Path</button>
-                <button id="tab-button-4" class="tab-button" onclick="showTabContent(4)">Grappling Game: Combat Design</button>
+                <button id="tab-button-4" class="tab-button" onclick="showTabContent(4)">Grappling Game: Combat
+                    Design</button>
                 <button id="tab-button-5" class="tab-button" onclick="showTabContent(5)">Huntsman</button>
             </div>
         </div>
     </section>
 
     <!-- Dynamic Content Section -->
-    <div id="tab-content">
+    <div id="tab-content" class="tab-parent">
         <!-- Tab 1 Content -->
         <div class="content" id="tab1-content">
             <h3>Pantheon Rift</h3>
@@ -83,17 +83,17 @@
             <div class="video-section">
                 <h4>Trailer Video</h4>
                 <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/0yG-Uzl9f5g?autoplay=1&loop=1&mute=1&playlist=0yG-Uzl9f5g"
-                        title="Pantheon Rift Trailer" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
+                    src="https://www.youtube.com/embed/0yG-Uzl9f5g?autoplay=1&loop=1&mute=1&playlist=0yG-Uzl9f5g"
+                    title="Pantheon Rift Trailer" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
                 </iframe>
             </div>
 
             </br>
             <p>
                 Check out the <a href="https://store.steampowered.com/app/2904340/Pantheon_Rift_Prototype/"
-                                 target="_blank">Pantheon Rift Prototype on Steam</a>.
+                    target="_blank">Pantheon Rift Prototype on Steam</a>.
             </p>
 
 
@@ -122,12 +122,14 @@
                         inspired by souls-likes and casual shooters.
                     </p>
                     <p>
-                        <strong class="highlight">Dodge System:</strong> Developed a dodge mechanic using vector math for
+                        <strong class="highlight">Dodge System:</strong> Developed a dodge mechanic using vector math
+                        for
                         directionality, with root motion for smooth animations and invincibility frames (I-frames) for
                         balanced gameplay.
                     </p>
                     <p>
-                        <strong class="highlight">Poise and Stagger System:</strong> Designed a poise mechanic to prevent
+                        <strong class="highlight">Poise and Stagger System:</strong> Designed a poise mechanic to
+                        prevent
                         player stagger, integrated poise damage into weapon interactions, and implemented regeneration
                         with visual feedback systems.
                     </p>
@@ -143,12 +145,13 @@
 
 
 
-        <div id="tab-content">
+        <div id="tab-content" class="tab2">
             <!-- Tab 2 Content -->
             <div class="content" id="tab2-content">
                 <h3>Solace</h3>
                 </br>
-                <iframe frameborder="0" src="https://itch.io/embed/1594306?bg_color=ffffff" width="552" height="167"><a href="https://onthehouse-gaming.itch.io/solace">Solace by OnTheHouse Gaming</a></iframe>
+                <iframe frameborder="0" src="https://itch.io/embed/1594306?bg_color=ffffff" width="552" height="167"><a
+                        href="https://onthehouse-gaming.itch.io/solace">Solace by OnTheHouse Gaming</a></iframe>
                 </br>
                 <p>
                     Designer and Programmer - Action RPG
@@ -157,7 +160,10 @@
                 <!-- Trailer Video -->
                 <div class="video-section">
                     <h4>Trailer Video</h4>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xUakY6cO_gs?si=Ob-MUiUqoTpSBIJO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-			origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xUakY6cO_gs?si=Ob-MUiUqoTpSBIJO"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-			origin" allowfullscreen></iframe>
                 </div>
 
 
@@ -193,7 +199,8 @@
                         slots and centralizing logic for improved gameplay interaction.
                     </p>
                     <p>
-                        <span class="highlight">Elemental Stances Mechanic Implementation:</span> Created and refined the
+                        <span class="highlight">Elemental Stances Mechanic Implementation:</span> Created and refined
+                        the
                         Elemental Stances system, enhancing combat strategy and player choice.
                     </p>
                     <p>
@@ -221,20 +228,24 @@
                     </p>
                     <p>Stance Specifics</p>
                     <p>
-                        Base/<strong class="fire">Fire</strong>/<strong class="water">Water</strong>: Auto-attack and
+                        <strong>Base</strong>/<strong class="fire">Fire</strong>/<strong class="water">Water</strong>:
+                        Auto-attack and
                         close distance to the nearest enemy.<br>
                         <strong class="lightning">Lightning:</strong> Prioritize interrupting enemy casts, then target
                         distant foes.<br>
                         <strong class="wind">Wind:</strong> Focus on enemies within AoE range.
                     </p>
                     <p>System Benefits</p>
-                    <p>
-                        Reduces target cycling.<br>
-                        Guides new players on stance and ability usage.<br>
-                        Allows player choice for targeting priority.
-                    </p>
+                    <ul>
+                        <li>Reduces target cycling.</li>
+                        <li>Guides new players on stance and ability usage.</li>
+                        <li>Allows player choice for targeting priority.</li>
+                    </ul>
                 </div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/eCDw2UCcu1Y?si=8hIGQhaWn0apwHU2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eCDw2UCcu1Y?si=8hIGQhaWn0apwHU2"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
                 <!-- Elemental Stances -->
@@ -244,10 +255,10 @@
                         Players can switch between the following stances to enhance strategy and combat choices:
                     </p>
                     <p>
-                        <span class="fire">Fire:</span> High single target damage.<br>
-                        <span class="water">Water:</span> Crowd control.<br>
-                        <span class="lightning">Lightning:</span> Ranged abilities for distant foes.<br>
-                        <span class="wind">Wind:</span> Area of effect attacks.
+                        <strong class="fire">Fire:</strong> High single target damage.<br>
+                        <strong class="water">Water:</strong> Crowd control.<br>
+                        <strong class="lightning">Lightning:</strong> Ranged abilities for distant foes.<br>
+                        <strong class="wind">Wind:</strong> Area of effect attacks.
                     </p>
                 </div>
 
@@ -257,7 +268,9 @@
                     <p>
                         Critical hits in Solace aren't random. Instead, they're triggered by ability synergies. For
                         instance, applying the Burn status and following up with a Water attack creates an explosion for
-                        a critical hit. Critical hits throw enemies off balance, with bold text feedback for players. In this example, Fire abilities followed by Water create dense steam signalling to the player that something has happened.
+                        a critical hit. Critical hits throw enemies off balance, with bold text feedback for players. In
+                        this example, Fire abilities followed by Water create dense steam signalling to the player that
+                        something has happened.
                     </p>
                     <video autoplay loop muted controls width="560" height="315">
                         <source src="Videos/CriticalHit1-ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4">
@@ -377,7 +390,8 @@
                         mechanics.
                     </p>
                     <video autoplay loop muted controls width="560" height="315">
-                        <source src="Videos/NewFormationForWebsite1-ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4">
+                        <source src="Videos/NewFormationForWebsite1-ezgif.com-gif-to-mp4-converter.mp4"
+                            type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -393,7 +407,8 @@
                         ensuring each strike feels fluid, powerful, and rewarding for the player.
                     </p>
                     <video autoplay loop muted controls width="560" height="315">
-                        <source src="Videos/KingdomHeartsSidebySide2-ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4">
+                        <source src="Videos/KingdomHeartsSidebySide2-ezgif.com-gif-to-mp4-converter.mp4"
+                            type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -412,7 +427,10 @@
                 <!-- Trailer Video -->
                 <div class="video-section">
                     <h4>Trailer Video</h4>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_G_P15WolEw?si=BMZzHuWNDwHtGcVO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_G_P15WolEw?si=BMZzHuWNDwHtGcVO"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
                 <!-- Project Goals -->
@@ -582,7 +600,8 @@
                     </p>
                     <p>
                         <strong class="highlight">
-                            These core actions shape the enemy design, with "Pull" becoming a central element of the main
+                            These core actions shape the enemy design, with "Pull" becoming a central element of the
+                            main
                             combat loop. For example, enemies are
                             powered by batteries, and the player must pull these batteries out to defeat them.
                         </strong>
@@ -656,20 +675,22 @@
                 </div>
             </div>
 
-            <div id="tab-content">
+            <div id="tab5-content" class="content">
                 <!-- Tab 5 Content: Huntsman -->
-                <div class="content" id="tab5-content">
+                <div>
                     <h3>Huntsman</h3>
                     </br>
-                    <iframe frameborder="0" src="https://itch.io/embed/3125345" width="552" height="167"><a href="https://onthehouse-gaming.itch.io/huntsman">Huntsman by OnTheHouse Gaming</a></iframe>
+                    <iframe frameborder="0" src="https://itch.io/embed/3125345" width="552" height="167"><a
+                            href="https://onthehouse-gaming.itch.io/huntsman">Huntsman by OnTheHouse Gaming</a></iframe>
                     </br>
-                    <p>
-                        Designer and Programmer - Survival Horror Game
-                    </p>
 
                     <!-- Trailer Video -->
                     <div class="video-section">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rolmOTuHu6Q?si=0uqeG88oE8j3Pkvd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/rolmOTuHu6Q?si=0uqeG88oE8j3Pkvd"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <p>
                             A compilation of various playthroughs of the game by streamers.
                         </p>
@@ -680,28 +701,44 @@
                     <div class="text-video-section">
                         <h4>Project Goals</h4>
                         <p>
-                            *Huntsman* is a survival horror game that challenges players to confront their primal fears by simulating the behavior of a real-life huntsman spider. Set in a labyrinthine laboratory inspired by *Resident Evil*’s progression-based level design, the game emphasizes tension and unpredictability. Players must outwit a relentless predator while navigating a space filled with danger and unlocking pathways to escape.
+                            *Huntsman* is a survival horror game that challenges players to confront their primal fears
+                            by simulating the behavior of a real-life huntsman spider. Set in a labyrinthine laboratory
+                            inspired by *Resident Evil*’s progression-based level design, the game emphasizes tension
+                            and unpredictability. Players must outwit a relentless predator while navigating a space
+                            filled with danger and unlocking pathways to escape.
                         </p>
                     </div>
 
                     <!-- Accomplishments -->
                     <div class="text-video-section">
                         <h4>Accomplishments</h4>
-                        <p><span class="highlight">Spider Movement Design:</span> Developed AI to mimic the erratic, lifelike movements of a huntsman spider, including rapid sprints, sudden stops, observational pauses, and calculated direction changes, making each encounter deeply unsettling and unpredictable.</p>
-                        <p><span class="highlight">Resident Evil-Inspired Level Design:</span> Created interconnected levels with progression-based pathways, locked doors, and environmental puzzles that encourage exploration and reward player persistence.</p>
+                        <p><span class="highlight">Spider Movement Design:</span> Developed AI to mimic the erratic,
+                            lifelike movements of a huntsman spider, including rapid sprints, sudden stops,
+                            observational pauses, and calculated direction changes, making each encounter deeply
+                            unsettling and unpredictable.</p>
+                        <p><span class="highlight">Resident Evil-Inspired Level Design:</span> Created interconnected
+                            levels with progression-based pathways, locked doors, and environmental puzzles that
+                            encourage exploration and reward player persistence.</p>
                     </div>
 
                     <!-- Player Experience -->
                     <div class="text-video-section">
                         <h4>Player Experience</h4>
                         <p>
-                            *Huntsman* is designed to evoke tension and fear through encounters that force players to control their reactions. The spider’s erratic movements and stalking behavior create an environment where every decision feels life-threatening.
+                            *Huntsman* is designed to evoke tension and fear through encounters that force players to
+                            control their reactions. The spider’s erratic movements and stalking behavior create an
+                            environment where every decision feels life-threatening.
                         </p>
                         <p>
-                            Success depends on maintaining composure under pressure. Players must avoid sprinting or panicking and instead control their movement carefully, mimicking real-life reactions to such predators. The result is a gameplay experience that feels deeply immersive and personal.
+                            Success depends on maintaining composure under pressure. Players must avoid sprinting or
+                            panicking and instead control their movement carefully, mimicking real-life reactions to
+                            such predators. The result is a gameplay experience that feels deeply immersive and
+                            personal.
                         </p>
                         <p>
-                            Each encounter is unique, with the spider behaving unpredictably, ensuring players remain engaged and tense throughout the game. The realistic pacing and level design reinforce the player’s sense of vulnerability, making progress feel both rewarding and hard-earned.
+                            Each encounter is unique, with the spider behaving unpredictably, ensuring players remain
+                            engaged and tense throughout the game. The realistic pacing and level design reinforce the
+                            player’s sense of vulnerability, making progress feel both rewarding and hard-earned.
                         </p>
                     </div>
 
@@ -712,27 +749,47 @@
                         <div class="mechanic-section">
                             <h4>Movement-Based Confrontations</h4>
                             <p>
-                                When spotted by the spider, players must control their instincts and move cautiously. Sprinting away or making sudden movements increases the likelihood of an attack, while slowly backing away can de-escalate the encounter. This mechanic emphasizes bravery and composure, forcing players to confront their fear rather than flee recklessly.
+                                When spotted by the spider, players must control their instincts and move cautiously.
+                                Sprinting away or making sudden movements increases the likelihood of an attack, while
+                                slowly backing away can de-escalate the encounter. This mechanic emphasizes bravery and
+                                composure, forcing players to confront their fear rather than flee recklessly.
                             </p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/K4aYY0v4A3Q?si=eOl1FP4j4RTEaRy9&amp;clip=UgkxPZdzTe7ak8a-ZWjHPL0Me4ndzSJsNvVz&amp;clipt=EPKMlgEYsYeXAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/K4aYY0v4A3Q?si=eOl1FP4j4RTEaRy9&amp;clip=UgkxPZdzTe7ak8a-ZWjHPL0Me4ndzSJsNvVz&amp;clipt=EPKMlgEYsYeXAQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
 
                         <!-- Realistic Spider Behavior -->
                         <div class="text-video-section">
                             <h4>Realistic Spider Behavior</h4>
                             <p>
-                                The spider’s behavior mirrors that of a real huntsman spider, featuring sudden stops, erratic movement, and observational pauses. This AI-driven unpredictability ensures no two encounters feel the same, keeping players constantly on edge.
+                                The spider’s behavior mirrors that of a real huntsman spider, featuring sudden stops,
+                                erratic movement, and observational pauses. This AI-driven unpredictability ensures no
+                                two encounters feel the same, keeping players constantly on edge.
                             </p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xedX1upcd3Q?si=MlKTJD2kaqDXQpYN&amp;clip=Ugkx25-kkAa9OjvMEjouTSVCABh5uG_EBOK8&amp;clipt=EPaqORi1pTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/xedX1upcd3Q?si=MlKTJD2kaqDXQpYN&amp;clip=Ugkx25-kkAa9OjvMEjouTSVCABh5uG_EBOK8&amp;clipt=EPaqORi1pTo"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
 
                         <!-- Progression Through Exploration -->
                         <div class="mechanic-section">
                             <h4>Progression Through Exploration</h4>
                             <p>
-                                Inspired by *Resident Evil*, the game’s labyrinthine level design features blocked pathways that gradually open as players solve environmental puzzles and progress. Revisiting earlier areas reveals new dangers and opportunities, maintaining tension and encouraging thorough exploration.
+                                Inspired by *Resident Evil*, the game’s labyrinthine level design features blocked
+                                pathways that gradually open as players solve environmental puzzles and progress.
+                                Revisiting earlier areas reveals new dangers and opportunities, maintaining tension and
+                                encouraging thorough exploration.
                             </p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Be2cRzZTDzo?si=4kwD5ORdfDjRJ4VH&amp;clip=UgkxMNNVVRTEF5dzifd8_wt0eTx0p8kU-r17&amp;clipt=ENGaNBjenzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/Be2cRzZTDzo?si=4kwD5ORdfDjRJ4VH&amp;clip=UgkxMNNVVRTEF5dzifd8_wt0eTx0p8kU-r17&amp;clipt=ENGaNBjenzU"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -769,7 +826,7 @@
                         }
 
                         document.getElementById(`tab-content`).style['box-shadow'] =
-                        '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';
+                            '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';
 
                         // Save the active tab index to localStorage
                         localStorage.setItem('activeTab', tabIndex);
