@@ -88,7 +88,7 @@ iframe {
 
 /* Center Titles */
 .centered-title {
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px; /* Add space below the titles */
   font-size: 1.8rem; /* Adjust font size */
   font-weight: bold;
@@ -158,7 +158,7 @@ iframe {
 .content h4 {
   margin-bottom: 20px;
   font-size: 1.8rem;
-  text-align: center;
+  text-align: left;
 }
 
 /* Text and Video Section Formatting */
