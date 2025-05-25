@@ -714,12 +714,12 @@
                         <p>I implemented a dynamic surface navigation system that allows our spider character to walk seamlessly on walls, ceilings, and floors. This system generates valid paths across any surface in the level, adapting in real-time to the environment’s geometry.</p>
                         <img src="PortfolioPieces/WallWalking.PNG" width="600">
                         <br>
-                        <video width="640" height="360" controls style="display: block; margin-left: 0;">
+                        <video width="640" height="360" controls muted style="display: block; margin-left: 0;">
                             <source src="PortfolioPieces/WallWalking.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <p>The spider model we used didn’t include any built-in IK bones, so I implemented my own using Unreal’s virtual bone system. I created a custom set of virtual bones to act as IK targets and built an IK Control Rig from scratch, referencing the structure of the Manny Control Rig. This allowed the spider’s legs to respond dynamically to uneven surfaces and terrain changes. As a result, the spider now places its feet in a grounded, believable way — making it feel more alive and unsettling.</p>
-                        <video width="640" height="360" controls style="display: block; margin-left: 0;">
+                        <video width="640" height="360" controls muted style="display: block; margin-left: 0;">
                             <source src="PortfolioPieces/IKBones.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
