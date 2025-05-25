@@ -699,7 +699,7 @@
 
                     <!-- Finding The Fun -->
                     <div class="text-video-section">
-                        <h4>Finding The Fun - It’s fun to be scared when your brain thinks the threat is real.</h4>
+                        <h4>Finding The Fun - You flinch, you panic, you laugh — because the spider feels real.</h4>
                         <p>
                            In Huntsman, we found the fun not in traditional horror tropes, but in realism. Our core idea was that the scariest spider is one that behaves exactly like a real one. Instead of using jump scares or scripted animations, we focused on creating a creature whose movements and decisions feel disturbingly natural. This taps into a primal part of the brain — the part that flinches at real threats. It’s the same kind of thrill people look for in haunted houses or scary movies: a safe but intense rush of fear that feels real enough to trigger your instincts, and leaves you laughing with your friends about how scared you just were..
                         </p>
@@ -714,13 +714,16 @@
                         <p>I implemented a dynamic surface navigation system that allows our spider character to walk seamlessly on walls, ceilings, and floors. This system generates valid paths across any surface in the level, adapting in real-time to the environment’s geometry.</p>
                         <img src="PortfolioPieces/WallWalking.PNG" width="600">
                         <br>
-                        <img src="PortfolioPieces/WallWalking.PNG" width="600">
-                        <br>
-                        <video width="640" height="360" controls>
-                            <source src="spider-demo.mp4" type="video/mp4">
+                        <video width="640" height="360" controls style="display: block; margin-left: 0;">
+                            <source src="PortfolioPieces/WallWalking.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-
+                        <p>The spider model we used didn’t include any built-in IK bones, so I implemented my own using Unreal’s virtual bone system. I created a custom set of virtual bones to act as IK targets and built an IK Control Rig from scratch, referencing the structure of the Manny Control Rig. This allowed the spider’s legs to respond dynamically to uneven surfaces and terrain changes. As a result, the spider now places its feet in a grounded, believable way — making it feel more alive and unsettling.</p>
+                        <video width="640" height="360" controls style="display: block; margin-left: 0;">
+                            <source src="PortfolioPieces/IKBones.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <br>
                     </div>
 
                     <!-- Player Experience -->
