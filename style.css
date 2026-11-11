@@ -55,28 +55,70 @@ p {
 }
 
 /* Tabs Section */
+
+
+
+
 .tabs-solo-projects {
-  display: flex;
-  width: 75%;
-  justify-content: space-between;
-  gap: 1.5rem;
-  margin: auto;
-  margin-bottom: 30px;
-}
-
-.button-border {
-  border: 2px solid black !important;
-}
-
-@media only screen and (max-width: 1377px) {
-  .tabs-solo-projects {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .tabs-team-projects {
+    display: flex;
     justify-content: center;
-  }
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    margin: 0 auto 30px;
 }
+
+    .tabs-solo-projects .tab-button {
+        width: 400px;
+        flex: 0 0 400px;
+        margin: 0;
+    }
+
+@media (max-width: 850px) {
+    .tabs-solo-projects {
+        flex-direction: column;
+    }
+
+        .tabs-solo-projects .tab-button {
+            width: min(400px, 100%);
+            flex: 0 0 auto;
+        }
+}
+
+
+
+
+
+
+
+/* Default Buttons - Unselected */
+.tab-button {
+    background-color: #8eaebd;
+    border: 2px solid #000000 !important;
+    box-sizing: border-box;
+    color: white;
+}
+
+    /* Selected Button */
+    .tab-button.button-border {
+        background-color: #456b80 !important;
+        border: 3px solid #B86B45 !important;
+        color: white;
+    }
+
+    /* Hover - Unselected Buttons */
+    .tab-button:not(.button-border):hover {
+        background-color: #6f96a9;
+    }
+
+    /* Hover - Selected Button */
+    .tab-button.button-border:hover {
+        background-color: #456b80 !important;
+    }
+
+
+
+
 
 iframe {
   position: relative;
@@ -401,4 +443,5 @@ video {
         grid-template-columns: 1fr;
     }
 }
+
 
