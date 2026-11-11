@@ -19,10 +19,9 @@
             <div class="container">
                 <h2>About Me</h2>
                 <p>
-                    I am a game designer with a B.A. in Game Design, specializing in Unreal Engine, C++, and Blueprints.
-                    While I focus on combat and enemy mechanics, my experience spans various genres, including
-                    multiplayer,
-                    mobile, and RPGs. If you're interested in collaborating, please contact me.
+                    I am a Game Designer and the creator of Huntsman, a commercially released spider survival horror game developed in Unreal Engine 5.
+                    As Game Director, I led the project from initial concept through its Steam release, overseeing creative direction, gameplay systems, enemy AI, level design, and production.
+                    I hold a B.A. in Game Design and specialize in Enemy AI Design, Encounter Design, and Gameplay Systems Design, with experience in Unreal Engine, C++, and Blueprint Visual Scripting.
                 </p>
                 <br>
                 <div id="virtual-portfolio">
@@ -38,7 +37,7 @@
                     </div>
                     <h3>Resumé</h3>
                     <a href="https://drive.google.com/file/d/1kqmnE-D3kUvppAaxUJFBYOSbVZKhoWUu/view?usp=sharing"
-                        target="_blank"><img src="public/svg/resume.png" alt=""></a>
+                       target="_blank"><img src="public/svg/resume.png" alt=""></a>
                 </div>
 
             </div>
@@ -46,13 +45,18 @@
     </section>
 
 
+
+
     <!-- Tabs Section -->
     <section id="tabs-section">
-        <!-- Team Projects -->
+
+        <!-- Commercial Projects -->
         <div class="tabs-category">
-            <h2 class="centered-title">Team Projects</h2>
+            <h2 class="centered-title">Commercial Projects</h2>
             <div class="tabs-team-projects">
-                <button id="tab-button-1" class="tab-button" onclick="showTabContent(1)">Pantheon Rift</button>
+                <button id="tab-button-5" class="tab-button" onclick="showTabContent(5)">
+                    Huntsman
+                </button>
             </div>
         </div>
 
@@ -60,788 +64,682 @@
         <div class="tabs-category">
             <h2 class="centered-title">Solo Projects</h2>
             <div class="tabs-solo-projects">
-                <button id="tab-button-2" class="tab-button" onclick="showTabContent(2)">Solace</button>
-                <button id="tab-button-3" class="tab-button" onclick="showTabContent(3)">Palette Path</button>
-                <button id="tab-button-4" class="tab-button" onclick="showTabContent(4)">Grappling Game: Combat
-                    Design</button>
-                <button id="tab-button-5" class="tab-button" onclick="showTabContent(5)">Huntsman</button>
+                <button id="tab-button-2" class="tab-button" onclick="showTabContent(2)">
+                    Solace
+                </button>
+                <button id="tab-button-3" class="tab-button" onclick="showTabContent(3)">
+                    Palette Path
+                </button>
             </div>
         </div>
+
     </section>
+
+
 
     <!-- Dynamic Content Section -->
     <div id="tab-content" class="tab-parent">
-        <!-- Tab 1 Content -->
-        <div class="content" id="tab1-content">
-            <h3>Pantheon Rift</h3>
-            </br>
-            <p>
-                Gameplay Programmer - Multiplayer Action Game
-            </p>
+        <div class="tab2">
 
-            <!-- Trailer Video -->
-            <div class="video-section">
-                <h4>Trailer Video</h4>
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/0yG-Uzl9f5g?autoplay=1&loop=1&mute=1&playlist=0yG-Uzl9f5g"
-                    title="Pantheon Rift Trailer" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
+            <!-- Solace Content -->
 
-            </br>
-            <p>
-                Check out the <a href="https://store.steampowered.com/app/2904340/Pantheon_Rift_Prototype/"
-                    target="_blank">Pantheon Rift Prototype on Steam</a>.
-            </p>
+            <div id="tab-content" class="tab-parent">
+                <div class="tab2">
 
-
-            <!-- Contributions -->
-            <div class="text-video-section">
-                <h4>Contributions</h4>
-                <p>
-                    As part of the development team for Pantheon Rift, the following contributions were made to enhance
-                    the gameplay and systems:
-                </p>
-                </br>
-                <ul>
-                    <p>
-                        <strong class="highlight">Animation Retargeting:</strong> Adapted animations for different
-                        character meshes and skeletons using Unreal Engine's retargeting tools, ensuring consistent and
-                        high-quality animations across all character models.
-                    </p>
-                    <p>
-                        <strong class="highlight">Attack Data Management:</strong> Created data assets for weapon
-                        attacks, including variables for animation montages, speeds, and sound effects. Integrated these
-                        assets into weapon blueprints to streamline combo setups.
-                    </p>
-                    <p>
-                        <strong class="highlight">Combat Mechanics Development:</strong> Implemented melee and ranged
-                        weapon systems, including equipping, attacking, and blocking mechanics. Contributed to features
-                        inspired by souls-likes and casual shooters.
-                    </p>
-                    <p>
-                        <strong class="highlight">Dodge System:</strong> Developed a dodge mechanic using vector math
-                        for
-                        directionality, with root motion for smooth animations and invincibility frames (I-frames) for
-                        balanced gameplay.
-                    </p>
-                    <p>
-                        <strong class="highlight">Poise and Stagger System:</strong> Designed a poise mechanic to
-                        prevent
-                        player stagger, integrated poise damage into weapon interactions, and implemented regeneration
-                        with visual feedback systems.
-                    </p>
-                    <p>
-                        <strong class="highlight">AI Spawning Systems:</strong> Optimized AI spawning processes by
-                        developing dynamic spawning mechanics, allowing creatures like sheep to spawn within specified
-                        radii with randomized positions and orientations.
-                    </p>
-                </ul>
-
-            </div>
-        </div>
-
-
-
-        <div id="tab-content" class="tab2">
-            <!-- Tab 2 Content -->
-            <div class="content" id="tab2-content">
-                <h3>Solace</h3>
-                </br>
-                <iframe frameborder="0" src="https://itch.io/embed/1594306?bg_color=ffffff" width="552" height="167"><a
-                        href="https://onthehouse-gaming.itch.io/solace">Solace by OnTheHouse Gaming</a></iframe>
-                </br>
-                <p>
-                    Designer and Programmer - Action RPG
-                </p>
-
-                <!-- Trailer Video -->
-                <div class="video-section">
-                    <h4>Trailer Video</h4>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xUakY6cO_gs?si=Ob-MUiUqoTpSBIJO"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-			origin" allowfullscreen></iframe>
-                </div>
-
-
-                <!-- Project Goals -->
-                <div class="text-video-section">
-                    <h4>Project Goals</h4>
-                    <p>
-                        I wanted to create an RPG that gave the player a wide range of abilities without forcing them to
-                        choose between a few and still be executable within a few button presses.
-                        Inspired by Final Fantasy 14, I used trigger buttons as gates for ability usage, enabling more
-                        abilities with minimal button clutter.
-                    </p>
-                    <p>
-                        Another goal was to design enemies that worked together, using timed attacks and formations.
-                        Ground telegraphs created engaging scenarios, requiring the player to solve puzzles in combat
-                        and align with level design.
-                    </p>
-                </div>
-
-                <!-- Accomplishments -->
-                <div class="text-video-section">
-                    <h4>Accomplishments</h4>
-                    <p>
-                        <span class="highlight">Primary Developer of Ability and Combat Systems:</span> Led the design
-                        and implementation of the game's intricate ability system and engaging enemy attack system.
-                    </p>
-                    <p>
-                        <span class="highlight">Innovative Targeting System Development:</span> Developed the Priority
-                        Target System, integrating stance-based targeting for enhanced combat dynamics.
-                    </p>
-                    <p>
-                        <span class="highlight">Hot Bar System Optimization:</span> Streamlined the Hot Bar by reducing
-                        slots and centralizing logic for improved gameplay interaction.
-                    </p>
-                    <p>
-                        <span class="highlight">Elemental Stances Mechanic Implementation:</span> Created and refined
-                        the
-                        Elemental Stances system, enhancing combat strategy and player choice.
-                    </p>
-                    <p>
-                        <span class="highlight">Teleportation System Overhaul:</span> Redesigned the teleportation
-                        mechanic from an ally-based to a player-centric system, increasing player control and game
-                        narrative integration.
-                    </p>
-                    <p>
-                        <span class="highlight">Enemy Ability and Formation System Design:</span> Crafted dynamic enemy
-                        encounters using timed attack abilities and formation tactics.
-                    </p>
-                </div>
-
-                <!-- Priority Target System -->
-                <div class="text-video-section">
-                    <h4>Priority Target System</h4>
-                    <p>
-                        In my research on targeting systems, I observed that most games use direction and distance for
-                        manual enemy lock-on.
-                        Innovating on this, I considered expanding targeting factors to include abilities and elemental
-                        stances.
-                        This led to the development of the Priority Target System, which offers both a traditional
-                        manual lock-on with a focus camera
-                        and a 'no lock' option where the system aids the player based on their current stance.
-                    </p>
-                    <p>Stance Specifics</p>
-                    <p>
-                        <strong>Base</strong>/<strong class="fire">Fire</strong>/<strong class="water">Water</strong>:
-                        Auto-attack and
-                        close distance to the nearest enemy.<br>
-                        <strong class="lightning">Lightning:</strong> Prioritize interrupting enemy casts, then target
-                        distant foes.<br>
-                        <strong class="wind">Wind:</strong> Focus on enemies within AoE range.
-                    </p>
-                    <p>System Benefits</p>
-                    <ul>
-                        <li>Reduces target cycling.</li>
-                        <li>Guides new players on stance and ability usage.</li>
-                        <li>Allows player choice for targeting priority.</li>
-                    </ul>
-                </div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/eCDw2UCcu1Y?si=8hIGQhaWn0apwHU2"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-                <!-- Elemental Stances -->
-                <div class="text-video-section">
-                    <h4>Elemental Stances</h4>
-                    <p>
-                        Players can switch between the following stances to enhance strategy and combat choices:
-                    </p>
-                    <p>
-                        <strong class="fire">Fire:</strong> High single target damage.<br>
-                        <strong class="water">Water:</strong> Crowd control.<br>
-                        <strong class="lightning">Lightning:</strong> Ranged abilities for distant foes.<br>
-                        <strong class="wind">Wind:</strong> Area of effect attacks.
-                    </p>
-                </div>
-
-                <!-- Critical Hits -->
-                <div class="text-video-section">
-                    <h4>Critical Hits</h4>
-                    <p>
-                        Critical hits in Solace aren't random. Instead, they're triggered by ability synergies. For
-                        instance, applying the Burn status and following up with a Water attack creates an explosion for
-                        a critical hit. Critical hits throw enemies off balance, with bold text feedback for players. In
-                        this example, Fire abilities followed by Water create dense steam signalling to the player that
-                        something has happened.
-                    </p>
-                    <video autoplay loop muted controls width="560" height="315">
-                        <source src="Videos/CriticalHit1-ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <!-- Hot Bar -->
-                <div class="text-video-section">
-                    <h4>Hot Bar</h4>
-                    <p>
-                        The Hot Bar allows quick access to abilities segmented by gamepad triggers for intuitive
-                        gameplay. Originally designed with 16 buttons, playtesting revealed that a more streamlined
-                        approach was needed. I reduced the Hot Bar to 8 buttons, maintaining the game's core goals while
-                        minimizing UI clutter and ensuring each ability was distinct and meaningful.
-                    </p>
-                    <p>
-                        The Hot Bar tracks cooldown times, ability resource costs, and ability status, expanding as
-                        needed and clearly indicating locked abilities, providing players with an intuitive and
-                        efficient interface.
-                    </p>
-                    <video autoplay loop muted controls width="560" height="315">
-                        <source src="Videos/Untitled video - Made with Clipchamp (2) (1).mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-
-                <!-- Player Ability System -->
-                <div class="text-video-section">
-                    <h4>Player Ability System</h4>
-                    <p>
-                        Inspired by Final Fantasy 14, I aimed to create an ability system that makes players feel
-                        powerful and in control. The design mirrors the concept of having a "rotation," where players
-                        can maximize damage by finding the optimal arrangement and usage of abilities with their
-                        cooldowns.
-                    </p>
-                    <p>
-                        The system includes abilities that inflict debuffs and damage over time (DoT). Players need to
-                        keep their DoT abilities active and maintain debuffs on enemies, then use finishers to maximize
-                        their damage output. This approach reflects the strategic rotations found in MMOs, encouraging
-                        players to think critically about their ability usage.
-                    </p>
-                    <p>
-                        The abilities in "Solace" feature a horizontal progression system. Players collect materials
-                        from fallen enemies to upgrade abilities, enhancing their strength and adding new effects. For
-                        example, upgrading the "Bubble" ability traps enemies in water and deals damage over time.
-                    </p>
-                    <p>
-                        When designing "Solace," I faced constraints due to my limited skills in animation and VFX,
-                        which led to removing some planned skills. To tackle this, I creatively used available
-                        marketplace assets, tailoring animations to fit various abilities and managing the budget for
-                        essential animations.
-                    </p>
-                    <video autoplay loop muted controls width="560" height="315">
-                        <source src="Videos/EnhanceAbility1-ezgif.com-gif-to-mp4-converter.mp4" video /mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <!-- Teleportation System -->
-                <div class="text-video-section">
-                    <h4>Teleportation System</h4>
-                    <p>
-                        The teleportation feature in Solace allows players to move instantly to specific locations
-                        within a defined range. This mechanic is vital for dodging enemy attacks and uncovering hidden
-                        paths, offering players a dynamic tool for both combat and exploration. By enhancing mobility,
-                        it maintains player engagement and enables strategic gameplay.
-                    </p>
-                    <p>
-                        Initially, the teleportation system was tied to an ally character, which restricted movement and
-                        limited its effectiveness. To better align with the game's elemental theme, I reimagined
-                        teleportation as a lightning-based ability. This redesign not only integrated it into the game's
-                        world but also empowered players with greater control. The mechanic now allows players to
-                        respond quickly to enemy formations and reposition strategically during combat.
-                    </p>
-                    <p>
-                        The system also includes a unique mechanic called "Teleport Strike," where players can teleport
-                        behind enemies and deliver a precise counterattack. This ability emphasizes timing and reflexes,
-                        adding depth to combat interactions and reinforcing the sense of mastery in gameplay. By
-                        leveraging existing assets and systems, I crafted a responsive and thematic teleportation
-                        mechanic that enhances both the narrative and the player's experience.
-                    </p>
-                    <video autoplay loop muted controls width="560" height="315">
-                        <source src="Videos/StormsTeleport1-ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <!-- Enemy Formation System -->
-                <div class="text-video-section">
-                    <h4>Enemy Formation System</h4>
-                    <p>
-                        I aimed to design enemies that challenge players both individually and as coordinated groups,
-                        enhancing combat dynamics and immersion. By demonstrating enemies working together, players face
-                        strategic challenges that require quick thinking and precise movement. A key design philosophy
-                        behind the enemy formations is to simulate intelligent behavior you would see with real squads
-                        of soldiers. Enemies are programmed to work together, creating dynamic encounters.
-                    </p>
-                    <p>
-                        The combat system features enemies with timed attack abilities, highlighted by ground telegraphs
-                        for player anticipation. Telegraphing attacks becomes crucial when multiple enemies use
-                        abilities simultaneously or as part of formations, creating small "puzzle" encounters that
-                        require strategic player responses.
-                    </p>
-                    <p>
-                        Ensuring that the difficulty level remains fair while still challenging is crucial. To achieve
-                        this, enemies display the names of the abilities they are using. This allows players to memorize
-                        and recognize incoming attacks, giving them the opportunity to anticipate and react
-                        appropriately in future encounters. The design philosophy focuses on providing clear feedback
-                        and opportunities for the player to learn and adapt.
-                    </p>
-                    <p>
-                        The coordinated enemy attacks are designed to encourage players to think strategically. Players
-                        must analyze enemy formations, predict their movements, and respond with appropriate abilities.
-                        This promotes a deeper level of engagement and rewards players for mastering the game's
-                        mechanics.
-                    </p>
-                    <video autoplay loop muted controls width="560" height="315">
-                        <source src="Videos/NewFormationForWebsite1-ezgif.com-gif-to-mp4-converter.mp4"
-                            type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <!-- Combat Design -->
-                <div class="text-video-section">
-                    <h4>Combat Design</h4>
-                    <p>
-                        Sora’s Keyblade in Kingdom Hearts sets a high standard for RPG combat with its weighty and
-                        impactful animations, creating a sense of momentum and realism in every swing. Inspired by this,
-                        I aimed to replicate that satisfying feel in my game’s basic attacks. Through careful animation
-                        selection and adjustments, I fine-tuned the motions to deliver a similar sense of impact,
-                        ensuring each strike feels fluid, powerful, and rewarding for the player.
-                    </p>
-                    <video autoplay loop muted controls width="560" height="315">
-                        <source src="Videos/KingdomHeartsSidebySide2-ezgif.com-gif-to-mp4-converter.mp4"
-                            type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-
-
-
-            <!-- Tab 3 Content -->
-            <div class="content" id="tab3-content">
-                <h3>Palette Path</h3>
-                </br>
-                <p>
-                    Designer and Programmer - Mobile Puzzle Game
-                </p>
-
-                <!-- Trailer Video -->
-                <div class="video-section">
-                    <h4>Trailer Video</h4>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_G_P15WolEw?si=BMZzHuWNDwHtGcVO"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-
-                <!-- Project Goals -->
-                <div class="text-video-section">
-                    <h4>Project Goals</h4>
-                    <p>
-                        Develop and release a mobile game, covering all stages from pre-production to launch, while
-                        advancing skills in blueprint coding.
-                        The game was designed to be educational and appropriate for younger players, with mechanics that
-                        combine colors and solve puzzles
-                        to enhance cognitive and learning skills.
-                    </p>
-                </div>
-
-                <!-- Accomplishments -->
-                <div class="text-video-section">
-                    <h4>Accomplishments</h4>
-                    <p>
-                        <span class="highlight">Engine Optimization for Level Design:</span> Enhanced game engine to
-                        speed up level creation by 80%, optimizing development workflow.
-                    </p>
-                    <p>
-                        <span class="highlight">Save Data System Implementation:</span> Developed a save system,
-                        ensuring player progress is retained.
-                    </p>
-                    <p>
-                        <span class="highlight">Level Streaming and Memory Management:</span> Implemented level
-                        streaming techniques and memory management practices,
-                        ensuring optimal game performance and efficiency.
-                    </p>
-                    <p>
-                        <span class="highlight">Game Mechanics Development:</span> Designed, iterated, and implemented
-                        'Bomb' and 'Fan' mechanics.
-                    </p>
-                    <p>
-                        <span class="highlight">Puzzle Design:</span> Crafted complex puzzles, improving player
-                        engagement and challenge.
-                    </p>
-                </div>
-
-                <!-- Game Concept -->
-                <div class="text-video-section">
-                    <h4>Game Concept</h4>
-                    <p>
-                        My vision for the game was to create a simple puzzle game that is easy to pick up, set aside,
-                        and be a source of mental stimulation.
-                        While younger audiences may be challenged by the color combining, any age can enjoy the puzzle
-                        aspect. I committed to a player-friendly
-                        approach, avoiding microtransactions and integrating advertisements fairly. Players can either
-                        watch ads to regain lives or wait for them to regenerate.
-                    </p>
-                    <p>
-                        Educationally, the game introduces younger players to color theory, particularly in creating
-                        secondary colors, while stimulating
-                        cognitive skills through thoughtfully designed puzzles. This blend of simplicity, educational
-                        value, and ethical design forms the game's core.
-                    </p>
-                </div>
-
-                <!-- Engine Optimization -->
-                <div class="text-video-section">
-                    <h4>Optimized Engine for Level & Puzzle Creation</h4>
-                    <p>
-                        I optimized the game engine by developing a map generator actor, enabling the creation of
-                        dynamic X by X grids.
-                        This tool streamlined level design, allowing for rapid customization of tile types, colors, and
-                        layouts. It also facilitated the creation
-                        of gaps and the designation of starting tiles, significantly enhancing the efficiency and
-                        flexibility of level development.
-                    </p>
-                    <p>
-                        <strong>Key Features:</strong><br>
-                        - <strong>Starting Tile:</strong> Marks the puzzle's starting point for the player.<br>
-                        - <strong>Blob Tile:</strong> Restores health, resizes the player's blob, and can change its
-                        color.<br>
-                        - <strong>Bomb Tile:</strong> Gives the player a bomb that can be detonated at will.<br>
-                        - <strong>Fan Tile:</strong> Spreads the player's blob color to all tiles in a straight line.
-                    </p>
-                    <video autoplay loop muted controls width="560" height="315">
-                        <source src="Videos/MapGenerator (1).mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <!-- Mechanics -->
-                <div class="text-video-section">
-                    <h4>Mechanics</h4>
-                    <p>
-                        The game features multiple tile mechanics, enriching the gameplay with strategic elements that
-                        encourage players to think creatively to solve puzzles.
-                    </p>
-                    <p>
-                        <strong>Bomb Mechanic:</strong> Players acquire a bomb by moving onto its tile, which can be
-                        detonated at their discretion.
-                        The explosion spreads the player's blob and color to adjacent tiles, programmed using a trace
-                        function to identify and alter neighboring tiles' colors.
-                        Smaller blobs interpolate to the center of each affected tile for a visually impactful effect.
-                    </p>
-                    <video autoplay loop muted controls width="560" height="315">
-                        <source src="Videos/Bomb (1).mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>
-                        <strong>Fan Mechanic:</strong> This tile blows the player's color across a straight line of
-                        tiles, excluding any between the player and the fan.
-                        Traces identify tiles in the direct line of effect, requiring players to plan their moves
-                        carefully for tactical advantage.
-                    </p>
-                    <video autoplay loop muted controls width="560" height="315">
-                        <source src="Videos/Fan (1).mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <!-- Progression -->
-                <div class="text-video-section">
-                    <h4>Progression</h4>
-                    <p>
-                        In Palette Path, I designed the gameplay progression around the Introduce, Practice, and Master
-                        pacing structure to create an engaging learning curve. Each mechanic is first introduced with
-                        straightforward levels that allow players to grasp its functionality in isolation. This is
-                        followed by practice levels, where players encounter the mechanic in increasingly varied and
-                        complex scenarios, ensuring they build confidence and familiarity. Finally, I integrate multiple
-                        mechanics together, presenting intricate challenges that truly test the player's puzzle-solving
-                        skills. This progressive structure encourages mastery while maintaining a balance of challenge
-                        and satisfaction, ensuring players feel rewarded for their growth and ingenuity.
-                    </p>
-                </div>
-            </div>
-
-
-            <!-- Tab 4 Content -->
-            <div class="content" id="tab4-content">
-                <h3>Grappling Game: Combat Design</h3>
-
-                <!-- Project Goals -->
-                <div class="text-video-section">
-                    <h4>Project Goals</h4>
-                    <p>
-                        The primary objective of this game is to center its design around the grappling mechanic.
-                        Drawing inspiration from iconic games like
-                        <em>Mario</em>, known for its focus on jumping, and <em>Sonic</em>, with its emphasis on speed,
-                        the game delivers a high-quality, immersive experience around a single core action: grappling.
-                    </p>
-                    <p>
-                        Recently, grappling has been integrated as a side mechanic in many games. I wanted to explore
-                        what a game would look like with grappling
-                        as the main focus, particularly in combat. This concept guided my design approach.
-                    </p>
-                </div>
-
-                <!-- Identifying Player Actions -->
-                <div class="text-video-section">
-                    <h4>Identifying Player Actions</h4>
-                    <p>
-                        To design enemies effectively, I began by identifying the possible actions players could perform
-                        with the grappling mechanic. These
-                        actions form the "verbs" of the gameplay and drive enemy interactions:
-                    </p>
-                    <p>
-                        - <strong>Pull:</strong> Attach the grapple to an object and pull it toward the player.<br>
-                        - <strong>Swing:</strong> Create a rope swing to traverse areas (dependent on the grappled
-                        object).<br>
-                        - <strong>Climb:</strong> Ascend when suspended over a drop.<br>
-                        - <strong>Spin:</strong> Rotate an attached object around the player in a circular path (object
-                        size-dependent).
-                    </p>
-                    <p>
-                        <strong class="highlight">
-                            These core actions shape the enemy design, with "Pull" becoming a central element of the
-                            main
-                            combat loop. For example, enemies are
-                            powered by batteries, and the player must pull these batteries out to defeat them.
-                        </strong>
-                    </p>
-                </div>
-                <video autoplay loop muted controls width="560" height="315">
-                    <source src="Videos/Untitled design.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-
-                <!-- Enemy Design Pillars -->
-                <div class="text-video-section">
-                    <h4>Enemy Design Pillars</h4>
-                    <p>
-                        To ensure dynamic and engaging encounters, I established three key pillars for enemy design:
-                    </p>
-                    <p>
-                        <strong>1. Size:</strong> Size influences the actions players can take on enemies. Larger
-                        enemies drag the player when grappled, while
-                        smaller enemies can be manipulated freely. Visual and gameplay feedback communicate these size
-                        differences clearly, with height,
-                        width, and scale exaggerated for clarity.
-                    </p>
-                    <p>
-                        <strong>2. Battery Location:</strong> Enemies have batteries that power them. Identifying and
-                        targeting these batteries is a core part
-                        of combat. Batteries are visibly marked, giving players strategic visual cues.
-                    </p>
-                    <p>
-                        <strong>3. Reaction:</strong> Enemies react uniquely when grappled. Some try to shake players
-                        off, others become aggressive, and some
-                        might pull the player toward them. Understanding these reactions is essential for mastery and
-                        rewards skilled players.
-                    </p>
-                </div>
-
-                <!-- Enemy Interaction Concepts -->
-                <div class="text-video-section">
-                    <h4>Enemy Interaction Concepts</h4>
-                    <p>
-                        Establishing these pillars led to brainstorming various enemy interactions, creating unique
-                        challenges for players. Examples include:
-                    </p>
-                    <p>
-                        - An enemy with a constantly shifting battery location.<br>
-                        - An enemy that hides its battery, revealing it only during attacks.<br>
-                        - An enemy that spins uncontrollably when grappled, damaging the player unless they detach.<br>
-                        - An enemy that cuts the player's grapple wire, forcing players to prioritize them.<br>
-                        - An enemy that counters the player's pull action by grabbing the wire and pulling the player
-                        toward it.<br>
-                        - An enemy that detaches smaller enemies for the player to spin as a weapon.<br>
-                        - An enemy that manipulates the environment, creating hazardous areas and forcing players to
-                        stay airborne.<br>
-                        - An enemy that retrieves detached batteries, requiring players to act quickly.
-                    </p>
-                </div>
-
-                <!-- Prototyping Enemies -->
-                <div class="text-video-section">
-                    <h4>Prototyping Enemies</h4>
-                    <p>
-                        With the design concepts in place, I began prototyping the first enemy. This prototype features
-                        a constantly moving battery that
-                        spins in a slow, continuous motion. Players must stay focused on the battery's location during
-                        combat, adding intensity and challenge.
-                    </p>
-                    <video autoplay loop muted controls width="560" height="315">
-                        <source src="Videos/ezgif.com-gif-to-mp4-converter (1).mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-
-            <div id="tab5-content" class="content">
-                <!-- Tab 5 Content: Huntsman -->
-                <div>
-                    <h3>Huntsman</h3>
-                    </br>
-                    <iframe frameborder="0" src="https://itch.io/embed/3125345" width="552" height="167"><a
-                            href="https://onthehouse-gaming.itch.io/huntsman">Huntsman by OnTheHouse Gaming</a></iframe>
-                    </br>
-
-                    <!-- Trailer Video -->
-                    <div class="video-section">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/pPnxrSPr8aw"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <p>
-                            A compilation of various playthroughs of the game by streamers.
-                        </p>
-                    </div>
-
-                    <!-- Finding The Fun -->
-                    <div class="text-video-section">
-                        <h4>Finding The Fun - You flinch, you panic, you laugh — because the spider feels real.</h4>
-                        <p>
-                           In Huntsman, we found the fun not in traditional horror tropes, but in realism. Our core idea was that the scariest spider is one that behaves exactly like a real one. Instead of using jump scares or scripted animations, we focused on creating a creature whose movements and decisions feel disturbingly natural. This taps into a primal part of the brain — the part that flinches at real threats. It’s the same kind of thrill people look for in haunted houses or scary movies: a safe but intense rush of fear that feels real enough to trigger your instincts, and leaves you laughing with your friends about how scared you just were..
-                        </p>
-                    </div>
-
-                    <!-- Technical Accomplishments -->
-                    <div class="text-video-section">
-                        <h4>Technical Accomplishments</h4>
-                        <p>I built a flexible teleporting function that dynamically relocates the spider based on the player's behavior and location. The system references both the player’s current and previous room, then cycles through a data table to find an appropriate spawn point that fits the encounter logic. For scripted sequences, it also supports fixed-location teleporting through a simple override branch. This system is modular and fully independent — it works with any spider type and has no hard dependencies</p>
-                        <img src="PortfolioPieces/TeleportSpiderFunction.PNG" width="600">
+                    <!-- Tab 2: Solace -->
+                    <div class="content" id="tab2-content">
+                        <h3>Solace</h3>
                         <br>
-                        <p>I implemented a dynamic surface navigation system that allows our spider character to walk seamlessly on walls, ceilings, and floors. This system generates valid paths across any surface in the level, adapting in real-time to the environment’s geometry.</p>
-                        <img src="PortfolioPieces/WallWalking.PNG" width="600">
+                        <iframe frameborder="0"
+                                src="https://itch.io/embed/1594306?bg_color=ffffff"
+                                width="552" height="167">
+                            <a href="https://onthehouse-gaming.itch.io/solace">
+                                Solace by OnTheHouse Gaming
+                            </a>
+                        </iframe>
                         <br>
-                        <video width="640" height="360" controls muted style="display: block; margin-left: 0;">
-                            <source src="PortfolioPieces/WallWalkingNoSound.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <p>The spider model we used didn’t include any built-in IK bones, so I implemented my own using Unreal’s virtual bone system. I created a custom set of virtual bones to act as IK targets and built an IK Control Rig from scratch, referencing the structure of the Manny Control Rig. This allowed the spider’s legs to respond dynamically to uneven surfaces and terrain changes. As a result, the spider now places its feet in a grounded, believable way — making it feel more alive and unsettling.</p>
-                        <video width="640" height="360" controls muted style="display: block; margin-left: 0;">
-                            <source src="PortfolioPieces/IKBonesNoSound.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <br>
-                    </div>
-
-                    <!-- Player Experience -->
-                    <div class="text-video-section">
-                        <h4>Player Experience</h4>
                         <p>
-                            *Huntsman* is designed to evoke tension and fear through encounters that force players to
-                            control their reactions. The spider’s erratic movements and stalking behavior create an
-                            environment where every decision feels life-threatening.
+                            Designer and Programmer - Action RPG
                         </p>
-                        <p>
-                            Success depends on maintaining composure under pressure. Players must avoid sprinting or
-                            panicking and instead control their movement carefully, mimicking real-life reactions to
-                            such predators. The result is a gameplay experience that feels deeply immersive and
-                            personal.
-                        </p>
-                        <p>
-                            Each encounter is unique, with the spider behaving unpredictably, ensuring players remain
-                            engaged and tense throughout the game. The realistic pacing and level design reinforce the
-                            player’s sense of vulnerability, making progress feel both rewarding and hard-earned.
-                        </p>
-                    </div>
 
-                    <!-- Mechanics -->
-                    <!--<div class="text-video-section">-->
-
-                        <!-- Movement-Based Confrontations -->
-                        <!--<div class="mechanic-section">
-                            <h4>Movement-Based Confrontations</h4>
-                            <p>
-                                When spotted by the spider, players must control their instincts and move cautiously.
-                                Sprinting away or making sudden movements increases the likelihood of an attack, while
-                                slowly backing away can de-escalate the encounter. This mechanic emphasizes bravery and
-                                composure, forcing players to confront their fear rather than flee recklessly.
-                            </p>
+                        <!-- Trailer Video -->
+                        <div class="video-section">
+                            <h4>Trailer Video</h4>
                             <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/K4aYY0v4A3Q?si=eOl1FP4j4RTEaRy9&amp;clip=UgkxPZdzTe7ak8a-ZWjHPL0Me4ndzSJsNvVz&amp;clipt=EPKMlgEYsYeXAQ"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div> -->
-
-                        <!-- Realistic Spider Behavior -->
-                        <!-- <div class="text-video-section">
-                            <h4>Realistic Spider Behavior</h4>
-                            <p>
-                                The spider’s behavior mirrors that of a real huntsman spider, featuring sudden stops,
-                                erratic movement, and observational pauses. This AI-driven unpredictability ensures no
-                                two encounters feel the same, keeping players constantly on edge.
-                            </p>
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/xedX1upcd3Q?si=MlKTJD2kaqDXQpYN&amp;clip=Ugkx25-kkAa9OjvMEjouTSVCABh5uG_EBOK8&amp;clipt=EPaqORi1pTo"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>-->
-
-                        <!-- Progression Through Exploration -->
-                        <!--<div class="mechanic-section">
-                            <h4>Progression Through Exploration</h4>
-                            <p>
-                                Inspired by *Resident Evil*, the game’s labyrinthine level design features blocked
-                                pathways that gradually open as players solve environmental puzzles and progress.
-                                Revisiting earlier areas reveals new dangers and opportunities, maintaining tension and
-                                encouraging thorough exploration.
-                            </p>
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/Be2cRzZTDzo?si=4kwD5ORdfDjRJ4VH&amp;clip=UgkxMNNVVRTEF5dzifd8_wt0eTx0p8kU-r17&amp;clipt=ENGaNBjenzU"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>//
+                                    src="https://www.youtube.com/embed/xUakY6cO_gs?si=4-W5H74QBWkYkXWh"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen></iframe>
                         </div>
-                    </div>-->
-                </div>
 
 
 
-                </section>
+                        <!-- Project Goals -->
+                        <div class="text-video-section">
+                            <h4>Project Goals</h4>
+                            <p>
+                                I wanted to create an RPG that gave the player a wide range of abilities without forcing them to
+                                choose between a few and still be executable within a few button presses.
+                                Inspired by Final Fantasy 14, I used trigger buttons as gates for ability usage, enabling more
+                                abilities with minimal button clutter.
+                            </p>
+                            <p>
+                                Another goal was to design enemies that worked together, using timed attacks and formations.
+                                Ground telegraphs created engaging scenarios, requiring the player to solve puzzles in combat
+                                and align with level design.
+                            </p>
+                        </div>
 
-                <script>
-                    // Set the default tab index
-                    const defaultTabIndex = 5;
+                        <!-- Accomplishments -->
+                        <div class="text-video-section">
+                            <h4>Accomplishments</h4>
+                            <p>
+                                <span class="highlight">Primary Developer of Ability and Combat Systems:</span> Led the design
+                                and implementation of the game's intricate ability system and engaging enemy attack system.
+                            </p>
+                            <p>
+                                <span class="highlight">Innovative Targeting System Development:</span> Developed the Priority
+                                Target System, integrating stance-based targeting for enhanced combat dynamics.
+                            </p>
+                            <p>
+                                <span class="highlight">Hot Bar System Optimization:</span> Streamlined the Hot Bar by reducing
+                                slots and centralizing logic for improved gameplay interaction.
+                            </p>
+                            <p>
+                                <span class="highlight">Elemental Stances Mechanic Implementation:</span> Created and refined
+                                the
+                                Elemental Stances system, enhancing combat strategy and player choice.
+                            </p>
+                            <p>
+                                <span class="highlight">Teleportation System Overhaul:</span> Redesigned the teleportation
+                                mechanic from an ally-based to a player-centric system, increasing player control and game
+                                narrative integration.
+                            </p>
+                            <p>
+                                <span class="highlight">Enemy Ability and Formation System Design:</span> Crafted dynamic enemy
+                                encounters using timed attack abilities and formation tactics.
+                            </p>
+                        </div>
 
-                    // Function to show content based on the tab clicked
-                    function showTabContent(tabIndex) {
-                        const contents = document.querySelectorAll('.content');
-                        const buttons = document.querySelectorAll('.tab-button');
-                        console.log(contents);
+                        <!-- Priority Target System -->
+                        <div class="text-video-section">
+                            <h4>Priority Target System</h4>
+                            <p>
+                                In my research on targeting systems, I observed that most games use direction and distance for
+                                manual enemy lock-on.
+                                Innovating on this, I considered expanding targeting factors to include abilities and elemental
+                                stances.
+                                This led to the development of the Priority Target System, which offers both a traditional
+                                manual lock-on with a focus camera
+                                and a 'no lock' option where the system aids the player based on their current stance.
+                            </p>
+                            <p>Stance Specifics</p>
+                            <p>
+                                <strong>Base</strong>/<strong class="fire">Fire</strong>/<strong class="water">Water</strong>:
+                                Auto-attack and
+                                close distance to the nearest enemy.<br>
+                                <strong class="lightning">Lightning:</strong> Prioritize interrupting enemy casts, then target
+                                distant foes.<br>
+                                <strong class="wind">Wind:</strong> Focus on enemies within AoE range.
+                            </p>
+                            <p>System Benefits</p>
+                            <ul>
+                                <li>Reduces target cycling.</li>
+                                <li>Guides new players on stance and ability usage.</li>
+                                <li>Allows player choice for targeting priority.</li>
+                            </ul>
+                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/eCDw2UCcu1Y?si=8hIGQhaWn0apwHU2"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                        // Hide all content
-                        contents.forEach(content => content.style.display = 'none');
-                        buttons.forEach(button => button.classList.remove('button-border'));
 
-                        // Show selected content
-                        const tabContent = document.getElementById(`tab${tabIndex}-content`);
-                        if (tabContent) {
-                            tabContent.style.display = 'block';
-                        } else {
-                            console.error(`Tab ${tabIndex} content not found!`);
-                        }
+                        <!-- Elemental Stances -->
+                        <div class="text-video-section">
+                            <h4>Elemental Stances</h4>
+                            <p>
+                                Players can switch between the following stances to enhance strategy and combat choices:
+                            </p>
+                            <p>
+                                <strong class="fire">Fire:</strong> High single target damage.<br>
+                                <strong class="water">Water:</strong> Crowd control.<br>
+                                <strong class="lightning">Lightning:</strong> Ranged abilities for distant foes.<br>
+                                <strong class="wind">Wind:</strong> Area of effect attacks.
+                            </p>
+                        </div>
 
-                        const tabButton = document.getElementById(`tab-button-${tabIndex}`);
-                        if (tabButton) {
-                            tabButton.classList.add("button-border")
-                        }
+                        <!-- Critical Hits -->
+                        <div class="text-video-section">
+                            <h4>Critical Hits</h4>
+                            <p>
+                                Critical hits in Solace aren't random. Instead, they're triggered by ability synergies. For
+                                instance, applying the Burn status and following up with a Water attack creates an explosion for
+                                a critical hit. Critical hits throw enemies off balance, with bold text feedback for players. In
+                                this example, Fire abilities followed by Water create dense steam signalling to the player that
+                                something has happened.
+                            </p>
+                            <video autoplay loop muted controls width="560" height="315">
+                                <source src="Videos/CriticalHit1-ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
 
-                        document.getElementById(`tab-content`).style['box-shadow'] =
-                            '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';
+                        <!-- Hot Bar -->
+                        <div class="text-video-section">
+                            <h4>Hot Bar</h4>
+                            <p>
+                                The Hot Bar allows quick access to abilities segmented by gamepad triggers for intuitive
+                                gameplay. Originally designed with 16 buttons, playtesting revealed that a more streamlined
+                                approach was needed. I reduced the Hot Bar to 8 buttons, maintaining the game's core goals while
+                                minimizing UI clutter and ensuring each ability was distinct and meaningful.
+                            </p>
+                            <p>
+                                The Hot Bar tracks cooldown times, ability resource costs, and ability status, expanding as
+                                needed and clearly indicating locked abilities, providing players with an intuitive and
+                                efficient interface.
+                            </p>
+                            <video autoplay loop muted controls width="560" height="315">
+                                <source src="Videos/Untitled video - Made with Clipchamp (2) (1).mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
 
-                        // Save the active tab index to localStorage
-                        localStorage.setItem('activeTab', tabIndex);
-                    }
 
-                    // Show the tab content based on localStorage or default to the specified default tab
-                    document.addEventListener('DOMContentLoaded', () => {
-                        let activeTab = parseInt(localStorage.getItem('activeTab')) || defaultTabIndex; // Ensure it's a number
-                        showTabContent(activeTab);
-                    });
-                </script>
+                        <!-- Player Ability System -->
+                        <div class="text-video-section">
+                            <h4>Player Ability System</h4>
+                            <p>
+                                Inspired by Final Fantasy 14, I aimed to create an ability system that makes players feel
+                                powerful and in control. The design mirrors the concept of having a "rotation," where players
+                                can maximize damage by finding the optimal arrangement and usage of abilities with their
+                                cooldowns.
+                            </p>
+                            <p>
+                                The system includes abilities that inflict debuffs and damage over time (DoT). Players need to
+                                keep their DoT abilities active and maintain debuffs on enemies, then use finishers to maximize
+                                their damage output. This approach reflects the strategic rotations found in MMOs, encouraging
+                                players to think critically about their ability usage.
+                            </p>
+                            <p>
+                                The abilities in "Solace" feature a horizontal progression system. Players collect materials
+                                from fallen enemies to upgrade abilities, enhancing their strength and adding new effects. For
+                                example, upgrading the "Bubble" ability traps enemies in water and deals damage over time.
+                            </p>
+                            <p>
+                                When designing "Solace," I faced constraints due to my limited skills in animation and VFX,
+                                which led to removing some planned skills. To tackle this, I creatively used available
+                                marketplace assets, tailoring animations to fit various abilities and managing the budget for
+                                essential animations.
+                            </p>
+                            <video autoplay loop muted controls width="560" height="315">
+                                <source src="Videos/EnhanceAbility1-ezgif.com-gif-to-mp4-converter.mp4" video /mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <!-- Teleportation System -->
+                        <div class="text-video-section">
+                            <h4>Teleportation System</h4>
+                            <p>
+                                The teleportation feature in Solace allows players to move instantly to specific locations
+                                within a defined range. This mechanic is vital for dodging enemy attacks and uncovering hidden
+                                paths, offering players a dynamic tool for both combat and exploration. By enhancing mobility,
+                                it maintains player engagement and enables strategic gameplay.
+                            </p>
+                            <p>
+                                Initially, the teleportation system was tied to an ally character, which restricted movement and
+                                limited its effectiveness. To better align with the game's elemental theme, I reimagined
+                                teleportation as a lightning-based ability. This redesign not only integrated it into the game's
+                                world but also empowered players with greater control. The mechanic now allows players to
+                                respond quickly to enemy formations and reposition strategically during combat.
+                            </p>
+                            <p>
+                                The system also includes a unique mechanic called "Teleport Strike," where players can teleport
+                                behind enemies and deliver a precise counterattack. This ability emphasizes timing and reflexes,
+                                adding depth to combat interactions and reinforcing the sense of mastery in gameplay. By
+                                leveraging existing assets and systems, I crafted a responsive and thematic teleportation
+                                mechanic that enhances both the narrative and the player's experience.
+                            </p>
+                            <video autoplay loop muted controls width="560" height="315">
+                                <source src="Videos/StormsTeleport1-ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <!-- Enemy Formation System -->
+                        <div class="text-video-section">
+                            <h4>Enemy Formation System</h4>
+                            <p>
+                                I aimed to design enemies that challenge players both individually and as coordinated groups,
+                                enhancing combat dynamics and immersion. By demonstrating enemies working together, players face
+                                strategic challenges that require quick thinking and precise movement. A key design philosophy
+                                behind the enemy formations is to simulate intelligent behavior you would see with real squads
+                                of soldiers. Enemies are programmed to work together, creating dynamic encounters.
+                            </p>
+                            <p>
+                                The combat system features enemies with timed attack abilities, highlighted by ground telegraphs
+                                for player anticipation. Telegraphing attacks becomes crucial when multiple enemies use
+                                abilities simultaneously or as part of formations, creating small "puzzle" encounters that
+                                require strategic player responses.
+                            </p>
+                            <p>
+                                Ensuring that the difficulty level remains fair while still challenging is crucial. To achieve
+                                this, enemies display the names of the abilities they are using. This allows players to memorize
+                                and recognize incoming attacks, giving them the opportunity to anticipate and react
+                                appropriately in future encounters. The design philosophy focuses on providing clear feedback
+                                and opportunities for the player to learn and adapt.
+                            </p>
+                            <p>
+                                The coordinated enemy attacks are designed to encourage players to think strategically. Players
+                                must analyze enemy formations, predict their movements, and respond with appropriate abilities.
+                                This promotes a deeper level of engagement and rewards players for mastering the game's
+                                mechanics.
+                            </p>
+                            <video autoplay loop muted controls width="560" height="315">
+                                <source src="Videos/NewFormationForWebsite1-ezgif.com-gif-to-mp4-converter.mp4"
+                                        type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <!-- Combat Design -->
+                        <div class="text-video-section">
+                            <h4>Combat Design</h4>
+                            <p>
+                                Sora’s Keyblade in Kingdom Hearts sets a high standard for RPG combat with its weighty and
+                                impactful animations, creating a sense of momentum and realism in every swing. Inspired by this,
+                                I aimed to replicate that satisfying feel in my game’s basic attacks. Through careful animation
+                                selection and adjustments, I fine-tuned the motions to deliver a similar sense of impact,
+                                ensuring each strike feels fluid, powerful, and rewarding for the player.
+                            </p>
+                            <video autoplay loop muted controls width="560" height="315">
+                                <source src="Videos/KingdomHeartsSidebySide2-ezgif.com-gif-to-mp4-converter.mp4"
+                                        type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Tab 3 Content -->
+                    <!-- Tab 3: Palette Path -->
+                    <div class="content" id="tab3-content">
+                        <h3>Palette Path</h3>
+                        <br>
+                        <p>
+                            Designer and Programmer - Mobile Puzzle Game
+                        </p>
+
+                        <!-- Trailer Video -->
+                        <div class="video-section">
+                            <h4>Trailer Video</h4>
+                            <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/_G_P15WolEw?si=BMZzHuWNDwHtGcVO"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen></iframe>
+                        </div>
+
+
+                        <!-- Project Goals -->
+                        <div class="text-video-section">
+                            <h4>Project Goals</h4>
+                            <p>
+                                Develop and release a mobile game, covering all stages from pre-production to launch, while
+                                advancing skills in blueprint coding.
+                                The game was designed to be educational and appropriate for younger players, with mechanics that
+                                combine colors and solve puzzles
+                                to enhance cognitive and learning skills.
+                            </p>
+                        </div>
+
+                        <!-- Accomplishments -->
+                        <div class="text-video-section">
+                            <h4>Accomplishments</h4>
+                            <p>
+                                <span class="highlight">Engine Optimization for Level Design:</span> Enhanced game engine to
+                                speed up level creation, optimizing development workflow.
+                            </p>
+                            <p>
+                                <span class="highlight">Save Data System Implementation:</span> Developed a save system,
+                                ensuring player progress is retained.
+                            </p>
+                            <p>
+                                <span class="highlight">Level Streaming and Memory Management:</span> Implemented level
+                                streaming techniques and memory management practices,
+                                ensuring optimal game performance and efficiency.
+                            </p>
+                            <p>
+                                <span class="highlight">Game Mechanics Development:</span> Designed, iterated, and implemented
+                                'Bomb' and 'Fan' mechanics.
+                            </p>
+                            <p>
+                                <span class="highlight">Puzzle Design:</span> Crafted complex puzzles, improving player
+                                engagement and challenge.
+                            </p>
+                        </div>
+
+                        <!-- Game Concept -->
+                        <div class="text-video-section">
+                            <h4>Game Concept</h4>
+                            <p>
+                                My vision for the game was to create a simple puzzle game that is easy to pick up, set aside,
+                                and be a source of mental stimulation.
+                                While younger audiences may be challenged by the color combining, any age can enjoy the puzzle
+                                aspect. I committed to a player-friendly
+                                approach, avoiding microtransactions and integrating advertisements fairly. Players can either
+                                watch ads to regain lives or wait for them to regenerate.
+                            </p>
+                            <p>
+                                Educationally, the game introduces younger players to color theory, particularly in creating
+                                secondary colors, while stimulating
+                                cognitive skills through thoughtfully designed puzzles. This blend of simplicity, educational
+                                value, and ethical design forms the game's core.
+                            </p>
+                        </div>
+
+                        <!-- Engine Optimization -->
+                        <div class="text-video-section">
+                            <h4>Optimized Engine for Level & Puzzle Creation</h4>
+                            <p>
+                                I optimized the game engine by developing a map generator actor, enabling the creation of
+                                dynamic X by X grids.
+                                This tool streamlined level design, allowing for rapid customization of tile types, colors, and
+                                layouts. It also facilitated the creation
+                                of gaps and the designation of starting tiles, significantly enhancing the efficiency and
+                                flexibility of level development.
+                            </p>
+                            <video autoplay loop muted controls width="560" height="315">
+                                <source src="Videos/MapGenerator (1).mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <!-- Mechanics -->
+                        <div class="text-video-section">
+                            <h4>Mechanics</h4>
+                            <p>
+                                The game features multiple tile mechanics, enriching the gameplay with strategic elements that
+                                encourage players to think creatively to solve puzzles.
+                            </p>
+                            <p>
+                                <strong>Bomb Mechanic:</strong> Players acquire a bomb by moving onto its tile, which can be
+                                detonated at their discretion.
+                                The explosion spreads the player's blob and color to adjacent tiles, programmed using a trace
+                                function to identify and alter neighboring tiles' colors.
+                                Smaller blobs interpolate to the center of each affected tile for a visually impactful effect.
+                            </p>
+                            <video autoplay loop muted controls width="560" height="315">
+                                <source src="Videos/Bomb (1).mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>
+                                <strong>Fan Mechanic:</strong> This tile blows the player's color across a straight line of
+                                tiles, excluding any between the player and the fan.
+                                Traces identify tiles in the direct line of effect, requiring players to plan their moves
+                                carefully for tactical advantage.
+                            </p>
+                            <video autoplay loop muted controls width="560" height="315">
+                                <source src="Videos/Fan (1).mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <!-- Progression -->
+                        <div class="text-video-section">
+                            <h4>Progression</h4>
+                            <p>
+                                In Palette Path, I designed the gameplay progression around the Introduce, Practice, and Master
+                                pacing structure to create an engaging learning curve. Each mechanic is first introduced with
+                                straightforward levels that allow players to grasp its functionality in isolation. This is
+                                followed by practice levels, where players encounter the mechanic in increasingly varied and
+                                complex scenarios, ensuring they build confidence and familiarity. Finally, I integrate multiple
+                                mechanics together, presenting intricate challenges that truly test the player's puzzle-solving
+                                skills. This progressive structure encourages mastery while maintaining a balance of challenge
+                                and satisfaction, ensuring players feel rewarded for their growth and ingenuity.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Huntsman Content -->
+                    <div id="tab5-content" class="content">
+
+                        <div>
+
+                            <!-- Huntsman Project Overview -->
+                            <div class="huntsman-overview">
+
+
+                                <!-- Huntsman Project Header -->
+                                <div class="huntsman-project-header">
+
+                                    <a class="huntsman-cover"
+                                       href="https://store.steampowered.com/app/3814680/Huntsman/"
+                                       target="_blank"
+                                       rel="noopener noreferrer">
+
+                                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3814680/header.jpg"
+                                             alt="Huntsman - View on Steam">
+
+                                        <span>View on Steam</span>
+                                    </a>
+
+                                    <div class="huntsman-header-info">
+                                        <h3>Huntsman</h3>
+
+                                        <p class="huntsman-genre">
+                                            SURVIVAL HORROR | UNREAL ENGINE 5
+                                        </p>
+
+                                        <p class="huntsman-role">
+                                            Game Director & Game Designer
+                                        </p>
+
+                                        <p class="huntsman-summary">
+                                            Led a three-person development team from concept
+                                            through commercial Steam release.
+                                        </p>
+
+                                        <div class="huntsman-stats">
+                                            <div>
+                                                <strong>18,000+</strong>
+                                                <span>Units Sold</span>
+                                            </div>
+
+                                            <div>
+                                                <strong>41,000+</strong>
+                                                <span>Steam Wishlists</span>
+                                            </div>
+                                        </div>
+
+                                        <p class="huntsman-release">
+                                            Released November 27, 2025
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- Key Responsibilities -->
+                                <div class="responsibilities-section">
+                                    <h4>Key Responsibilities</h4>
+
+                                    <div class="responsibilities-grid">
+
+                                        <div class="responsibility-item">
+                                            <strong>Game Direction</strong>
+                                            <p>Creative vision, design decisions, and player experience.</p>
+                                        </div>
+
+                                        <div class="responsibility-item">
+                                            <strong>Enemy AI & Encounter Design</strong>
+                                            <p>Spider behaviors, enemy interactions, and encounter planning.</p>
+                                        </div>
+
+                                        <div class="responsibility-item">
+                                            <strong>Gameplay & Level Design</strong>
+                                            <p>Gameplay systems, puzzles, and level progression.</p>
+                                        </div>
+
+                                        <div class="responsibility-item">
+                                            <strong>Production & Leadership</strong>
+                                            <p>Team coordination, development priorities, and feature reviews.</p>
+                                        </div>
+
+                                        <div class="responsibility-item">
+                                            <strong>Quality Assurance</strong>
+                                            <p>Playtesting, feedback, and gameplay improvements.</p>
+                                        </div>
+
+                                        <div class="responsibility-item">
+                                            <strong>Post-Launch Development</strong>
+                                            <p>Game updates and Protect & Serve DLC.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+                            <p>
+                                Huntsman is a first-person survival horror game that sets itself apart by focusing on realistic spider behaviors and movement, with distinct hunting patterns and reactions inspired by real-world arachnids.
+                                </br>
+                                As Game Director and Game Designer, I led a three-person development team from initial concept through commercial Steam release, overseeing the game's creative direction, design, production, and post-launch development,
+                                including the *Protect & Serve* DLC.
+                            </p>
+
+                            <!-- Trailer Video -->
+                            <!-- Finding The Fun -->
+                            <div class="text-video-section">
+                                <h4>Finding The Fun</h4>
+                                <div class="video-section">
+                                    <iframe width="560" height="315"
+                                            src="https://www.youtube.com/embed/pPnxrSPr8aw"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                    <p style="font-size: 13px; font-style: italic;">
+                                        A compilation of various playthroughs of the game by streamers.
+                                    </p>
+
+                                </div>
+                                <p>
+                                    Huntsman's horror design is built around the instinctive human response to spiders. By studying and recreating real spider behaviors, we aimed to trigger the same natural fear responses players experience in real life.
+                                    </br>
+                                    </br>
+                                    Our approach focused on sustaining tension through anticipation. A spider's sudden movements, unpredictable reactions, and recognizable hunting behaviors create a threat that players remain conscious of even when no spider is visible.
+                                    This allows fear to extend beyond individual encounters, influencing how players explore, move, and make decisions throughout the game.
+                                    </br>
+                                    </br>
+                                    We identified the fun in those reactions themselves. Players scream, panic, make mistakes, and ultimately laugh at how frightened they become. This creates an inherently shareable experience, particularly for streamers, where the player's reaction becomes just as entertaining as the gameplay.
+                                    By grounding our spiders in realistic behavior, we aimed to make those reactions authentic, giving players memorable moments they want to share and audiences a reason to watch.
+                                </p>
+                            </div>
+
+
+
+                            <!-- Key Design Contributions -->
+                            <div class="design-contributions">
+                                <h4>Key Design Contributions</h4>
+
+                                <div class="contributions-grid">
+
+                                    <div class="contribution-card">
+                                        <h5>Enemy AI Design</h5>
+                                        <p>
+                                            Designed four spider species with distinct movement,
+                                            hunting behaviors, and reactions to player actions.
+                                        </p>
+                                    </div>
+
+                                    <div class="contribution-card">
+                                        <h5>Encounter Design</h5>
+                                        <p>
+                                            Designed encounters around player anticipation,
+                                            environmental layouts, and spider behavior.
+                                        </p>
+                                    </div>
+
+                                    <div class="contribution-card">
+                                        <h5>Gameplay & Level Design</h5>
+                                        <p>
+                                            Designed six interconnected facility sectors,
+                                            integrating exploration, environmental puzzles,
+                                            and gameplay progression.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+
+                            </section>
+
+                            <script>
+                                // Set the default tab index
+                                const defaultTabIndex = 5;
+
+                                // Function to show content based on the tab clicked
+                                function showTabContent(tabIndex) {
+                                const contents = document.querySelectorAll('.content');
+                                const buttons = document.querySelectorAll('.tab-button');
+                                console.log(contents);
+
+                                // Hide all content
+                                contents.forEach(content => content.style.display = 'none');
+                                buttons.forEach(button => button.classList.remove('button-border'));
+
+                                // Show selected content
+                                const tabContent = document.getElementById(`tab${tabIndex}-content`);
+                                if (tabContent) {
+                                tabContent.style.display = 'block';
+                                } else {
+                                console.error(`Tab ${tabIndex} content not found!`);
+                                }
+
+                                const tabButton = document.getElementById(`tab-button-${tabIndex}`);
+                                if (tabButton) {
+                                tabButton.classList.add("button-border")
+                                }
+
+                                document.getElementById(`tab-content`).style['box-shadow'] =
+                                '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';
+
+                                // Save the active tab index to localStorage
+                                localStorage.setItem('activeTab', tabIndex);
+                                }
+
+                                // Show the tab content based on localStorage or default to the specified default tab
+                                document.addEventListener('DOMContentLoaded', () => {
+
+                                let activeTab = parseInt(localStorage.getItem('activeTab')) || defaultTabIndex;
+
+                                if (![2, 3, 5].includes(activeTab)) {
+                                activeTab = defaultTabIndex;
+                                }
+
+                                showTabContent(activeTab);
+                                // Ensure it's a number
+                                showTabContent(activeTab);
+                                });
+                            </script>
 
 
 

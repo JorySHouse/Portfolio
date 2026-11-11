@@ -211,3 +211,230 @@ video {
   color: #990000; /* Deep Crimson */
   font-weight: bold;
 }
+
+.huntsman-overview {
+    max-width: 552px;
+    margin: 20px 0 35px;
+}
+
+    .huntsman-overview a img {
+        display: block;
+        transition: opacity 0.2s ease;
+    }
+
+    .huntsman-overview a:hover img {
+        opacity: 0.85;
+    }
+
+.huntsman-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 22px;
+}
+
+    .huntsman-details div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .huntsman-details strong {
+        font-size: 12px;
+        color: #777;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .huntsman-details span {
+        font-size: 15px;
+        font-weight: 600;
+        color: #333;
+    }
+
+@media (max-width: 600px) {
+    .huntsman-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Key Responsibilities */
+.responsibilities-section {
+    margin: 30px 0;
+    max-width: 850px;
+}
+
+    .responsibilities-section h4 {
+        margin-bottom: 24px;
+    }
+
+.responsibilities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 35px;
+}
+
+.responsibility-item {
+    border-left: 3px solid #8eaebd;
+    padding-left: 14px;
+}
+
+    .responsibility-item strong {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .responsibility-item p {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #666;
+        margin: 0;
+    }
+
+@media (max-width: 650px) {
+    .responsibilities-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Huntsman Project Header */
+
+.huntsman-project-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 35px;
+    max-width: 1000px;
+    margin: 30px 0 45px;
+}
+
+.huntsman-cover {
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+    .huntsman-cover img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: opacity 0.2s ease;
+    }
+
+    .huntsman-cover:hover img {
+        opacity: 0.85;
+    }
+
+    .huntsman-cover span {
+        display: inline-block;
+        margin-top: 10px;
+        color: #517e92;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+.huntsman-header-info h3 {
+    font-size: 30px;
+    margin: 0 0 10px;
+}
+
+.huntsman-genre {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #777;
+    margin: 0 0 15px;
+}
+
+.huntsman-role {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.huntsman-summary {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 20px;
+}
+
+.huntsman-stats {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 15px;
+}
+
+    .huntsman-stats div {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .huntsman-stats strong {
+        font-size: 25px;
+        color: #333;
+    }
+
+    .huntsman-stats span {
+        font-size: 12px;
+        color: #777;
+        text-transform: uppercase;
+    }
+
+.huntsman-release {
+    font-size: 13px;
+    color: #777;
+}
+
+/* Key Design Contributions */
+
+.design-contributions {
+    max-width: 1000px;
+    margin: 40px 0;
+}
+
+    .design-contributions h4 {
+        margin-bottom: 24px;
+    }
+
+.contributions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.contribution-card {
+    padding: 22px;
+    border: 1px solid #dce5e9;
+    border-radius: 10px;
+    background-color: #f8fafb;
+    border-top: 4px solid #8eaebd;
+}
+
+    .contribution-card h5 {
+        font-size: 16px;
+        margin: 0 0 12px;
+        color: #333;
+    }
+
+    .contribution-card p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #555;
+        margin: 0;
+    }
+
+/* Responsive Layout */
+
+@media (max-width: 750px) {
+    .huntsman-project-header {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contributions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
