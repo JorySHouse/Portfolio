@@ -300,19 +300,22 @@ video {
 
 /* Huntsman Project Header */
 
+
 .huntsman-project-header {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
     align-items: center;
-    gap: 35px;
-    max-width: 1000px;
-    margin: 30px 0 45px;
+    gap: 45px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto 45px;
 }
 
 .huntsman-cover {
     display: block;
     position: relative;
     text-decoration: none;
+    min-width: 0;
 }
 
     .huntsman-cover img {
@@ -323,69 +326,25 @@ video {
         transition: opacity 0.2s ease;
     }
 
-    .huntsman-cover:hover img {
-        opacity: 0.85;
-    }
-
-    .huntsman-cover span {
-        display: inline-block;
-        margin-top: 10px;
-        color: #517e92;
-        font-size: 14px;
-        font-weight: bold;
-    }
-
-.huntsman-header-info h3 {
-    font-size: 30px;
-    margin: 0 0 10px;
+.huntsman-header-info {
+    min-width: 0;
 }
 
 .huntsman-genre {
-    font-size: 12px;
-    letter-spacing: 1px;
-    color: #777;
-    margin: 0 0 15px;
+    white-space: nowrap;
 }
 
-.huntsman-role {
-    font-size: 17px;
-    font-weight: bold;
-    margin: 0 0 10px;
-}
-
-.huntsman-summary {
-    font-size: 15px;
-    line-height: 1.5;
-    margin: 0 0 20px;
-}
-
-.huntsman-stats {
-    display: flex;
-    gap: 35px;
-    margin-bottom: 15px;
-}
-
-    .huntsman-stats div {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
+@media (max-width: 750px) {
+    .huntsman-project-header {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    .huntsman-stats strong {
-        font-size: 25px;
-        color: #333;
+    .huntsman-genre {
+        white-space: normal;
     }
-
-    .huntsman-stats span {
-        font-size: 12px;
-        color: #777;
-        text-transform: uppercase;
-    }
-
-.huntsman-release {
-    font-size: 13px;
-    color: #777;
 }
+
 
 /* Key Design Contributions */
 
